@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  font-family: "inter";
+}
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+a {
+  text-decoration: none;
+}
+.navbar-nav {
+  width: 100%;
+  padding: 0 20%;
+}
+.container-fluid {
+  max-width: 1440px;
+  padding: 0 144px;
+}
+#navbarSupportedContent {
+  font-family: "inter";
+}
+.banner-product {
+  padding: 0 144px;
+}
+.carousel-item img {
+  object-fit: cover;
+}
+.trademark {
+  padding: 0 144px;
+  margin: 50px 0;
+}
+.trademark-item {
+  padding: 1.5vw;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.trademark-text {
+  text-align: center;
+  font-size: 2vw;
+}
+.featuredProducts {
+  padding: 0 144px;
+  margin-top: 100px;
+}
+.responsive-image {
+  width: 100%;
+  height: auto;
+}
+.viewmore {
+  margin-top: 2vw;
+  text-align: right;
+  font-size: 1vw;
+}
+button .btn-add-product {
+  width: 100%;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.text-title p {
+  font-size: 2vw;
+  font-weight: 500 !important;
+}
+.card-text {
+  color: #000000;
+  font-size: 1vw;
+  font-weight: 400 !important;
+}
+.card-money {
+  color: #405cbf;
+  font-weight: 700;
+  font-size: 1.1vw;
+}
+.btn-outline-primary {
+  width: 100%;
+  font-size: 1vw;
+}
+.news {
+  padding: 0 144px;
+  margin-top: 100px;
+}
+.news-title {
+  font-size: 2vw;
+  text-align: center;
+}
+.news-list img {
+  width: 100%;
+}
+.news-list {
+  margin-bottom: 1vw;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.news-list-title{
+  font-size: 1.5vw;
+  padding: 1vw 0;
+  color: #000000;
+}
+.text-news{
+  font-size: 1.1vw;
+  color: #000000;
+}
+.more-read{
+  color: #000000;
+}
+.footer{
+  padding: 0 144px;
+  margin-top: 100px;
+  background-color: #D9D9D9;
+}
+li{
+  list-style: none;
+}
+.menu-footer-title{
+  padding-left: 0;
+}
+.menu-footer-title li a{
+  color: #000000;
+}
+.connect-we li{
+  font-size: 3vw;
+  padding-right: 1vw;
+}
+@media only screen and (max-width: 768px) {
+  .navbar-nav {
+    padding: 0;
+  }
+  .header-icon {
+    flex-direction: column;
+  }
+  .btn-outline-success {
+    width: 56px;
+    height: 48px;
+  }
+  .container-fluid,
+  .banner-product {
+    padding: 0;
+  }
+  body {
+    padding: 0 15px;
+  }
+  .featuredProducts {
+    padding: 0;
+  }
+  .trademark {
+    padding: 15px;
+    /* color: #ff0000; */
+  }
+  .trademark-text {
+    font-size: 3vw;
+  }
+  /* .trademark-item{
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+  } */
+  .item-featured {
+    /* max-width: 50%; */
+    margin: 1.5vw 0;
+  }
+  .card-text,
+  .viewmore {
+    font-size: 2.5vw;
+  }
+  .card-money {
+    font-size: 3.1vw;
+  }
+  .btn-outline-primary {
+    font-size: 2.5vw;
+  }
+  .text-title p {
+    font-size: 3vw;
+  }
+  .news, .footer{
+    padding:0 15px;
+  }
+  .news-title{
+    font-size: 3vw;
+  }
+  .news-list-title  {
+    font-size: 2.5vw;
+  }
+  .text-news{
+    font-size: 2vw;
+  }
+  .footer-title{
+    font-size: 3vw;
+  }
+  .connect-we li{
+    font-size: 4vw;
+    padding-right: 1vw;
+  }
+}

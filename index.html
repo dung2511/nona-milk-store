@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NoNa</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./image/logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between"
+          >
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Danh sách sản phẩm
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Khuyến Mãi - Quà Tặng</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Sữa Tăng Cân Cho Bé</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Sữa Tăng Chiều Cao</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Sữa Dê</a></li>
+                <li><a class="dropdown-item" href="#">Sữa Đặc Trị</a></li>
+                <li><a class="dropdown-item" href="#">Sữa Bầu</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Sữa Tươi Nhập Khẩu</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Sữa Bột Pha Sẵn</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Giới Thiệu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tin Tức</a>
+            </li>
+          </ul>
+          <form class="d-flex header-icon" role="search">
+            <button class="btn btn-outline-success" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button class="btn btn-outline-success" type="submit">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <button class="btn btn-outline-success" type="submit">
+              <i class="fa-solid fa-user"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <section class="banner-product">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href=""
+              ><img
+                src="./image/bannerlogo.jpg"
+                class="d-block w-100"
+                alt="..."
+                data-bs-interval="5000"
+            /></a>
+          </div>
+          <div class="carousel-item">
+            <a href=""
+              ><img
+                src="./image/banner-sua-bot-elife-nha-cung-cap-ban-buon-sua-bot-sua-non-gia-si-cac-loai-toan-quoc.jpg"
+                class="d-block w-100"
+                alt="..."
+                data-bs-interval="5000"
+            /></a>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="trademark">
+      <div class="row">
+        <div class="col-12 trademark-text"><p>Thương Hiệu</p></div>
+      </div>
+      <div class="row list-trademark">
+        <div class="col-md-2 col-6 trademark-item">
+          <a href=""><img src="./image/vinamilk.png" alt="" /></a>
+        </div>
+        <div class="col-md-2 col-6 trademark-item">
+          <a href=""><img src="./image/thtruemilk.png" alt="" /></a>
+        </div>
+        <div class="col-md-2 col-6 trademark-item">
+          <a href=""><img src="./image/meiji.png" alt="" /></a>
+        </div>
+        <div class="col-md-2 col-6 trademark-item">
+          <a href=""><img src="./image/nan.png" alt="" /></a>
+        </div>
+        <div class="col-md-2 col-6 trademark-item">
+          <a href=""><img src="./image/nutifood.png" alt="" /></a>
+        </div>
+        <div class="col-md-2 col-6 trademark-item">
+          <a href=""><img src="./image/nutifood-2.png" alt="" /></a>
+        </div>
+      </div>
+    </section>
+    <section class="featuredProducts">
+      <div class="row">
+        <div class="col-12 text-title">
+          <p>Sản phẩm nổi bật</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 item-featured col-md-3 reponsive-image">
+          <a href="">
+            <div class="card">
+              <img src="./image/sua-meiji.jpg" alt="..." />
+              <div class="card-body">
+                <h5 class="card-text">
+                  Sữa Meiji Infant Formula 800g (0-12 tháng)
+                </h5>
+                <p class="card-money">509.000đ</p>
+                <a href="#" class="btn btn-outline-primary"
+                  >Thêm vào giỏ hàng <i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 item-featured col-md-3 reponsive-image">
+          <a href="">
+            <div class="card">
+              <img src="./image/sua-meiji.jpg" alt="..." />
+              <div class="card-body">
+                <h5 class="card-text">
+                  Sữa Meiji Infant Formula 800g (0-12 tháng)
+                </h5>
+                <p class="card-money">509.000đ</p>
+                <a href="#" class="btn btn-outline-primary"
+                  >Thêm vào giỏ hàng <i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 item-featured col-md-3 reponsive-image">
+          <a href="">
+            <div class="card">
+              <img src="./image/sua-meiji.jpg" alt="..." />
+              <div class="card-body">
+                <h5 class="card-text">
+                  Sữa Meiji Infant Formula 800g (0-12 tháng)
+                </h5>
+                <p class="card-money">509.000đ</p>
+                <a href="#" class="btn btn-outline-primary"
+                  >Thêm vào giỏ hàng <i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 item-featured col-md-3 reponsive-image">
+          <a href="">
+            <div class="card">
+              <img src="./image/sua-meiji.jpg" alt="..." />
+              <div class="card-body">
+                <h5 class="card-text">
+                  Sữa Meiji Infant Formula 800g (0-12 tháng)
+                </h5>
+                <p class="card-money">509.000đ</p>
+                <a href="#" class="btn btn-outline-primary"
+                  >Thêm vào giỏ hàng <i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 viewmore">
+          <a href="">Xem thêm <i class="fa-solid fa-angles-right"></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="featuredProducts">
+      <div class="row">
+        <div class="col-12 text-title">
+          <p>Sản phẩm mới nhất</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 item-featured col-md-3 reponsive-image">
+          <a href="">
+            <div class="card">
+              <img src="./image/sua-meiji.jpg" alt="..." />
+              <div class="card-body">
+                <h5 class="card-text">
+                  Sữa Meiji Infant Formula 800g (0-12 tháng)
+                </h5>
+                <p class="card-money">509.000đ</p>
+                <a href="#" class="btn btn-outline-primary"
+                  >Thêm vào giỏ hàng <i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 item-featured col-md-3 reponsive-image">
+          <a href="">
+            <div class="card">
+              <img src="./image/sua-meiji.jpg" alt="..." />
+              <div class="card-body">
+                <h5 class="card-text">
+                  Sữa Meiji Infant Formula 800g (0-12 tháng)
+                </h5>
+                <p class="card-money">509.000đ</p>
+                <a href="#" class="btn btn-outline-primary"
+                  >Thêm vào giỏ hàng <i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 item-featured col-md-3 reponsive-image">
+          <a href="">
+            <div class="card">
+              <img src="./image/sua-meiji.jpg" alt="..." />
+              <div class="card-body">
+                <h5 class="card-text">
+                  Sữa Meiji Infant Formula 800g (0-12 tháng)
+                </h5>
+                <p class="card-money">509.000đ</p>
+                <a href="#" class="btn btn-outline-primary"
+                  >Thêm vào giỏ hàng <i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 item-featured col-md-3 reponsive-image">
+          <a href="">
+            <div class="card">
+              <img src="./image/sua-meiji.jpg" alt="..." />
+              <div class="card-body">
+                <h5 class="card-text">
+                  Sữa Meiji Infant Formula 800g (0-12 tháng)
+                </h5>
+                <p class="card-money">509.000đ</p>
+                <a href="#" class="btn btn-outline-primary"
+                  >Thêm vào giỏ hàng <i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 viewmore">
+          <a href="">Xem thêm <i class="fa-solid fa-angles-right"></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="row">
+        <div class="col-12 news-title">Tin tức</div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-6 news-list">
+          <a href="">
+            <img src="./image/news-1.png" alt="" />
+            <h5 class="news-list-title">
+              Dinh Dưỡng, Sức Khỏe & Sống Vui Khỏe
+            </h5>
+            <p class="text-news">
+              Chiến lược về Dinh dưỡng và Sống Vui Khỏe thể hiện xuyên suốt qua
+              các dòng sản phẩm của Nestlé. Bạn sẽ nắm bắt cách sở hữu một chế
+              độ ăn uống lành mạnh qua chuyên mục này.
+            </p>
+            <p class="more-read">
+              Đọc thêm <i class="fa-solid fa-angles-right"></i>
+            </p>
+          </a>
+        </div>
+        <div class="col-md-3 col-6 news-list">
+          <a href="">
+            <img src="./image/news-1.png" alt="" />
+            <h5 class="news-list-title">
+              Dinh Dưỡng, Sức Khỏe & Sống Vui Khỏe
+            </h5>
+            <p class="text-news">
+              Chiến lược về Dinh dưỡng và Sống Vui Khỏe thể hiện xuyên suốt qua
+              các dòng sản phẩm của Nestlé. Bạn sẽ nắm bắt cách sở hữu một chế
+              độ ăn uống lành mạnh qua chuyên mục này.
+            </p>
+            <p class="more-read">
+              Đọc thêm <i class="fa-solid fa-angles-right"></i>
+            </p>
+          </a>
+        </div>
+        <div class="col-md-3 col-6 news-list">
+          <a href="">
+            <img src="./image/news-1.png" alt="" />
+            <h5 class="news-list-title">
+              Dinh Dưỡng, Sức Khỏe & Sống Vui Khỏe
+            </h5>
+            <p class="text-news">
+              Chiến lược về Dinh dưỡng và Sống Vui Khỏe thể hiện xuyên suốt qua
+              các dòng sản phẩm của Nestlé. Bạn sẽ nắm bắt cách sở hữu một chế
+              độ ăn uống lành mạnh qua chuyên mục này.
+            </p>
+            <p class="more-read">
+              Đọc thêm <i class="fa-solid fa-angles-right"></i>
+            </p>
+          </a>
+        </div>
+        <div class="col-md-3 col-6 news-list">
+          <a href="">
+            <img src="./image/news-1.png" alt="" />
+            <h5 class="news-list-title">
+              Dinh Dưỡng, Sức Khỏe & Sống Vui Khỏe
+            </h5>
+            <p class="text-news">
+              Chiến lược về Dinh dưỡng và Sống Vui Khỏe thể hiện xuyên suốt qua
+              các dòng sản phẩm của Nestlé. Bạn sẽ nắm bắt cách sở hữu một chế
+              độ ăn uống lành mạnh qua chuyên mục này.
+            </p>
+            <p class="more-read">
+              Đọc thêm <i class="fa-solid fa-angles-right"></i>
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="row">
+        <div class="col-md-3 col-6 footer-list">
+          <h5 class="footer-title">
+            <p>Chăm sóc khách hàng</p>
+          </h5>
+          <ul class="menu-footer-title">
+            <li><a href="#">Hướng Dẫn Mua Hàng</a></li>
+            <li><a href="">Chính Sách Bảo Hành</a></li>
+            <li><a href="">Thanh Toán</a></li>
+            <li><a href="">Trả Hàng & Hoàn Tiền</a></li>
+            <li><a href="">Hướng Dẫn Bán Hàng</a></li>
+            <li><a href="">Trung tâm trợ giúp</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-6 footer-list">
+          <h5 class="footer-title">
+            <p>Về công ty NoNa</p>
+          </h5>
+          <ul class="menu-footer-title">
+            <li><a href="#">Giới thiệu về Công ty NoNa</a></li>
+            <li><a href="">Tuyển dụng khối Văn phòng</a></li>
+            <li><a href="">Tuyển dụng Khối siêu thị</a></li>
+            <li><a href="">Chính sách bảo mật</a></li>
+            <li><a href="">Điều khoản sử dụng</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-6 footer-list">
+          <h5 class="footer-title">
+            <p>Công ty cổ phần NoNa</p>
+          </h5>
+          <ul class="menu-footer-title">
+            <li><a href="#">Email: cskh@nona.com</a></li>
+            <li><a href="">Điện thoại: 023 xxxx 3374</a></li>
+            <li><a href="">ĐKKD: TN-TT-HN</a></li>
+            <li>
+              <a href="">Văn phòng: Tầng X Tòa nhà X, 0Z T, P. A, Q. D, HN</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-6 footer-list">
+          <h5 class="footer-title">
+            <p>Kết nối với chúng tôi</p>
+          </h5>
+          <ul class="menu-footer-title connect-we d-flex">
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
