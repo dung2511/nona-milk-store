@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>NoNa</title>
+    <title>NoNa Home</title>
+    <link rel="icon" type="image/x-icon" href="./image/favicon.ico" />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -44,7 +45,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul
-            class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between"
+            class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center"
           >
             <li class="nav-item dropdown">
               <a
@@ -57,22 +58,40 @@
                 Danh sách sản phẩm
               </a>
               <ul class="dropdown-menu">
+                <!-- <li>
+                  <a class="dropdown-item" href="product-list.html">Khuyến Mãi - Quà Tặng</a>
+                </li> -->
                 <li>
-                  <a class="dropdown-item" href="#">Khuyến Mãi - Quà Tặng</a>
+                  <a class="dropdown-item" href="product-list.html"
+                    >Sữa Tăng Cân Cho Bé</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Sữa Tăng Cân Cho Bé</a>
+                  <a class="dropdown-item" href="product-list.html"
+                    >Sữa Tăng Chiều Cao</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Sữa Tăng Chiều Cao</a>
+                  <a class="dropdown-item" href="product-list.html">Sữa Dê</a>
                 </li>
-                <li><a class="dropdown-item" href="#">Sữa Dê</a></li>
-                <li><a class="dropdown-item" href="#">Sữa Đặc Trị</a></li>
-                <li><a class="dropdown-item" href="#">Sữa Bầu</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">Sữa Tươi Nhập Khẩu</a>
+                  <a class="dropdown-item" href="product-list.html"
+                    >Sữa Đặc Trị</a
+                  >
                 </li>
-                <li><a class="dropdown-item" href="#">Sữa Bột Pha Sẵn</a></li>
+                <li>
+                  <a class="dropdown-item" href="product-list.html">Sữa Bầu</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="product-list.html"
+                    >Sữa Tươi Nhập Khẩu</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="product-list.html"
+                    >Sữa Bột Pha Sẵn</a
+                  >
+                </li>
               </ul>
             </li>
             <li class="nav-item">
@@ -83,13 +102,13 @@
             </li>
           </ul>
           <form class="d-flex header-icon" role="search">
-            <button class="btn btn-outline-success" type="submit">
+            <button class="btn btn-outline-success btn-search" type="submit">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-            <button class="btn btn-outline-success" type="submit">
+            <button class="btn btn-outline-success btn-shopping" type="submit">
               <i class="fa-solid fa-cart-shopping"></i>
             </button>
-            <button class="btn btn-outline-success" type="submit">
+            <button class="btn btn-outline-success btn-user" type="submit">
               <i class="fa-solid fa-user"></i>
             </button>
           </form>
@@ -326,72 +345,80 @@
     </section>
     <section class="news">
       <div class="row news-title">
-        <div class="col-12 ">Tin tức</div>
+        <div class="col-12">Tin tức</div>
       </div>
       <div class="row list-news-items">
         <div class="col-md-3 col-6 news-list">
-          <a href="">
-            <img src="./image/news-1.png" alt="" />
-            <h5 class="news-list-title">
-              Dinh Dưỡng, Sức Khỏe & Sống Vui Khỏe
-            </h5>
-            <p class="text-news">
-              Chiến lược về Dinh dưỡng và Sống Vui Khỏe thể hiện xuyên suốt qua
-              các dòng sản phẩm của Nestlé. Bạn sẽ nắm bắt cách sở hữu một chế
-              độ ăn uống lành mạnh qua chuyên mục này.
-            </p>
-            <p class="more-read">
-              Đọc thêm <i class="fa-solid fa-angles-right"></i>
-            </p>
-          </a>
+            <div class="card">
+              <img src="./image/news-1.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="news-list-title">
+                  Dinh Dưỡng, Sức Khỏe & Sống Vui Khỏe
+                </h5>
+                <p class="text-news">
+                  Chiến lược về Dinh dưỡng và Sống Vui Khỏe thể hiện xuyên suốt
+                  qua các dòng sản phẩm của Nestlé. Bạn sẽ nắm bắt cách sở hữu
+                  một chế độ ăn uống lành mạnh qua chuyên mục này.
+                </p>
+                <a href="#" class="more-read">
+                  Đọc thêm <i class="fa-solid fa-angles-right"></i>
+                </a>
+              </div>
+            </div>
         </div>
         <div class="col-md-3 col-6 news-list">
-          <a href="">
-            <img src="./image/news-1.png" alt="" />
-            <h5 class="news-list-title">
-              Dinh Dưỡng, Sức Khỏe & Sống Vui Khỏe
-            </h5>
-            <p class="text-news">
-              Chiến lược về Dinh dưỡng và Sống Vui Khỏe thể hiện xuyên suốt qua
-              các dòng sản phẩm của Nestlé. Bạn sẽ nắm bắt cách sở hữu một chế
-              độ ăn uống lành mạnh qua chuyên mục này.
-            </p>
-            <p class="more-read">
-              Đọc thêm <i class="fa-solid fa-angles-right"></i>
-            </p>
-          </a>
+          <div class="card">
+            <img src="./image/news-1.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="news-list-title">
+                Dinh Dưỡng, Sức Khỏe & Sống Vui Khỏe
+              </h5>
+              <p class="text-news">
+                Chiến lược về Dinh dưỡng và Sống Vui Khỏe thể hiện xuyên suốt
+                qua các dòng sản phẩm của Nestlé. Bạn sẽ nắm bắt cách sở hữu
+                một chế độ ăn uống lành mạnh qua chuyên mục này.
+              </p>
+              <a href ="#" class="more-read">
+                Đọc thêm <i class="fa-solid fa-angles-right"></i>
+              </a>
+            </div>
+          </div>
         </div>
         <div class="col-md-3 col-6 news-list">
-          <a href="">
-            <img src="./image/news-1.png" alt="" />
-            <h5 class="news-list-title">
-              Dinh Dưỡng, Sức Khỏe & Sống Vui Khỏe
-            </h5>
-            <p class="text-news">
-              Chiến lược về Dinh dưỡng và Sống Vui Khỏe thể hiện xuyên suốt qua
-              các dòng sản phẩm của Nestlé. Bạn sẽ nắm bắt cách sở hữu một chế
-              độ ăn uống lành mạnh qua chuyên mục này.
-            </p>
-            <p class="more-read">
-              Đọc thêm <i class="fa-solid fa-angles-right"></i>
-            </p>
-          </a>
+          <div class="card">
+            <img src="./image/news-1.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="news-list-title">
+                Dinh Dưỡng, Sức Khỏe & Sống Vui Khỏe
+              </h5>
+              <p class="text-news">
+                Chiến lược về Dinh dưỡng và Sống Vui Khỏe thể hiện xuyên suốt
+                qua các dòng sản phẩm của Nestlé. Bạn sẽ nắm bắt cách sở hữu
+                một chế độ ăn uống lành mạnh qua chuyên mục này.
+              </p>
+              <a href ="#" class="more-read">
+                Đọc thêm <i class="fa-solid fa-angles-right"></i>
+              </a>
+            </div>
+          </div>
         </div>
         <div class="col-md-3 col-6 news-list">
-          <a href="">
-            <img src="./image/news-1.png" alt="" />
-            <h5 class="news-list-title">
-              Dinh Dưỡng, Sức Khỏe & Sống Vui Khỏe
-            </h5>
-            <p class="text-news">
-              Chiến lược về Dinh dưỡng và Sống Vui Khỏe thể hiện xuyên suốt qua
-              các dòng sản phẩm của Nestlé. Bạn sẽ nắm bắt cách sở hữu một chế
-              độ ăn uống lành mạnh qua chuyên mục này.
-            </p>
-            <p class="more-read">
-              Đọc thêm <i class="fa-solid fa-angles-right"></i>
-            </p>
-          </a>
+          <div class="card">
+            <img src="./image/news-1.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="news-list-title">
+                Dinh Dưỡng, Sức Khỏe & Sống Vui Khỏe
+              </h5>
+              <p class="text-news">
+                Chiến lược về Dinh dưỡng và Sống Vui Khỏe thể hiện xuyên suốt
+                qua các dòng sản phẩm của Nestlé. Bạn sẽ nắm bắt cách sở hữu
+                một chế độ ăn uống lành mạnh qua chuyên mục này.
+              </p>
+              <a href ="#" class="more-read">
+                Đọc thêm <i class="fa-solid fa-angles-right"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
