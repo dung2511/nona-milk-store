@@ -1,0 +1,262 @@
+.detail {
+  padding: 0 144px;
+}
+.detail .row {
+  margin: 0;
+}
+.img-details-small {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.img-details-big img {
+  height: 100%;
+}
+.name-product {
+    font-size: 1.5vw;
+}
+.reviews-list p {
+  margin: 0;
+  padding-left: 12px;
+}
+.reviews-list {
+  display: flex;
+  align-items: center;
+}
+.discuss {
+  padding-left: 12px;
+}
+.qty-items {
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  width: auto;
+}
+.qty-items button {
+  border: 0 !important;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 4px 0;
+  border-radius: 5px;
+}
+.qty input {
+  width: 24px;
+  text-align: center !important;
+  border: 0 !important;
+}
+.btn-add-to-cart .btn-outline-primary {
+  transition: 0.7s !important;
+}
+.btn-add-to-cart,
+.btn-buy-now {
+  padding: 0;
+  margin-top: 20px;
+}
+.btn-buy-now {
+  padding-left: 12px;
+}
+.btn-click-buy {
+  background: #ff0000;
+  color: #ffffff;
+  --bs-btn-border-color: #ff0000;
+  transition: 0.7s !important;
+}
+.btn-outline-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2vw;
+}
+.btn-buy-now:hover .btn-click-buy {
+  background-color: #f88;
+}
+.product-detail {
+  margin-top: 50px;
+  padding: 0 144px;
+}
+.chi-tiet-san-san-pham button,
+.danh-gia button,
+.thao-luan-hoi-dap button {
+  border: 0;
+  border-radius: 10px;
+  width: 100%;
+}
+.text-center {
+  text-align: center;
+}
+.chi-tiet {
+  border: 1px solid #dddddd;
+  padding: 5px;
+  border-radius: 10px;
+}
+.chi-tiet-san-san-pham {
+  background: #ffffff;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+.chi-tiet-san-san-pham button {
+  background: none;
+}
+.danh-gia button,
+.thao-luan-hoi-dap button {
+  background: none;
+}
+.danh-sach-detail {
+  background: #dddddd;
+  border-radius: 10px;
+}
+.thong-tin-bo-ich {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.thong-tin-bo-ich p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.row table {
+  margin-top: 32px;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.table-details {
+  padding: 5px 10px;
+  text-align: left;
+}
+table .col-2 {
+  font-size: 1.1vw;
+}
+table .col-10 {
+  font-size: 1vw;
+  line-height: 1.2vw;
+}
+.thong-tin-chi-tiet {
+  padding: 0;
+}
+.margin-bottom {
+  margin-bottom: 10px;
+}
+.thanh-danh-gia {
+  background-color: #dee2e6;
+  max-width: 100%;
+  padding: 0;
+  height: 5px;
+  border-radius: 10px;
+}
+.task-rating {
+  background-color: #444444;
+  width: 80%;
+  height: 5px;
+  border-radius: 10px 0 0 10px;
+}
+.so-danh-gia {
+  margin: 0;
+}
+.task-rating-4star {
+  background-color: #444444;
+  width: 1%;
+  height: 5px;
+  border-radius: 10px 0 0 10px;
+}
+.star-danh-gia {
+  display: flex;
+  justify-content: end;
+}
+.title-danh-gia {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #ee697a;
+  font-size: 2.5vw;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.cham-diem {
+    color: #ee697a;
+  font-size: 4vw;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.user-comment {
+  background-color: #fff1eb;
+  border-radius: 10px;
+  height: 100%;
+  padding: 12px;
+}
+.name-user {
+  padding: 12px 12px 0 0;
+  font-size: 1.5vw;
+}
+.ngay-danh-gia {
+  padding-top: 12px;
+  color: #797b83;
+}
+.nhan-xet p {
+  margin: 0;
+}
+.so-sao-danh-gia {
+  color: #e5ea51;
+}
+.flow {
+  padding: 0 144px;
+  margin: 50px 0;
+}
+.reviews-list i:nth-child(-n+4){
+    color:#e5ea51;
+}
+@media only screen and (max-width: 768px) {
+    .flow, .detail, .product-detail {
+        padding: 0 15px;
+    }
+    .reviews {
+        font-size: 3.5vw;
+    }
+    .price-product {
+        font-size: 8vw;
+    }
+    .btn-outline-primary, .btn-click-buy {
+        font-size: 3vw;
+
+    }
+    .danh-sach-detail, .thong-tin-bo-ich {
+        font-size: 3vw;
+    }
+    table .col-2, table .col-10 {
+        font-size: 3vw;
+        line-height: 3.5vw;
+        font-weight: 400;
+    }
+    .thong-tin-bo-ich {
+        display: none;
+    }
+    .table-details p {
+        margin-bottom: 8px;
+    }
+    .title-danh-gia {
+        font-size: 7vw;
+    }
+    .cham-diem {
+        font-size: 5vw;
+    }
+    .star-danh-gia {
+        font-size: 3.5vw;
+    }
+    .so-danh-gia {
+        font-size: 3vw;
+    }
+    .name-user {
+        font-size: 6vw;
+    }
+    .name-product {
+        font-size: 6vw;
+    font-weight: 500;
+    }
+    .chi-tiet-san-san-pham {
+        padding: 1px 0;
+    }
+}

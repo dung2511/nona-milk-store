@@ -3,7 +3,7 @@
   font-family: "inter";
 }
 img {
-  max-width: 100%;
+  width: 100%;
   display: block;
   object-fit: cover;
 }
@@ -22,7 +22,7 @@ a {
   font-family: "inter";
 }
 .nav-item {
-  padding: 8px 32px;
+  padding: 8px 16px;
 }
 .dropdown-menu {
   left: 32px !important;
