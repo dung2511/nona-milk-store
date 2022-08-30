@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .detail {
   padding: 0 144px;
 }
@@ -9,6 +12,10 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.fa-angle-right {
+  padding: 0 12px;
+}
+
 .img-details-big img {
   height: 100%;
 }

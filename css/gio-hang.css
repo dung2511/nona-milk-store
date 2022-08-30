@@ -1,56 +1,131 @@
+.row {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
 .gio-hang {
-    padding: 0 144px;
+  padding: 0 144px;
 }
 .gio-hang p {
-    margin:0 ;
+  margin: 0;
 }
 .height-100 {
-    height: 100%;
+  height: 100%;
 }
 .thanh-tools {
-    border: 1px solid hsla(0, 0%, 0%, 0.25);
-    border-radius: 8px;
-    height: 48px;
-    margin: 0;
+  border: 1px solid hsla(0, 0%, 0%, 0.25);
+  border-radius: 8px;
+  height: 48px;
+  margin: 0;
 }
 .tools-left {
-    padding: 0 30px;
+  padding: 0 30px;
 }
 .tools-left {
-   text-align: center;
+  text-align: center;
 }
 .tools-left p {
-    padding-left: 30px;
+  padding-left: 30px;
 }
 .tools-left img {
-    width: auto;
-    padding-left: 30px;
+  width: auto;
+  padding-left: 30px;
 }
 .tools-right {
-    text-align: center;
+  text-align: center;
 }
 .san-pham-trong-gio {
-    margin: 0;
-    border: 1px solid hsla(0, 0%, 0%, 0.25);
-    border-radius: 8px;
+  margin: 12px 0;
+  border: 1px solid hsla(0, 0%, 0%, 0.25);
+  border-radius: 8px;
 }
 .qty-items {
-    border: 1px solid #dee2e6;
-    border-radius: 5px;
-    width: 75%;
-  }
-  .qty-items button {
-    border: 0 !important;
-    width: 30px;
-    height: 30px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  width: 75%;
+}
+.qty-items button {
+  border: 0 !important;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 4px;
+  background: none;
+  padding: 0 5px;
+}
+.qty-items input {
+  text-align: center !important;
+  border: 0 !important;
+  width: 100%;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.bang-chi-tiet {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 144px;
+    margin-top: 12px;
+    border-radius: 10px;
+}
+.detail-items {
+    padding: 5px;
+}
+.tien-hanh-thanh-toan {
+  padding: 0 144px;
+  margin-top: 12px;
+}
+.tien-hanh-thanh-toan .row {
+  text-align: right;
+  height: 48px;
+}
+.tien-hanh-thanh-toan .col-12 {
+  padding: 0;
+  height: auto;
+}
+.gio-hang-responsive {
+  display: none;
+}
+.flow {
+  padding: 0 144px;
+    margin: 50px 0;
+}
+.fa-angle-right {
+  padding: 0 12px;
+}
+@media only screen and (max-width: 768px){
+  .bang-chi-tiet, .tien-hanh-thanh-toan {
     padding: 0;
-    margin: 4px;
-    background:none;
-    padding: 0 5px;
+  }
+  .gio-hang {
+    display: none;
+  }
+  .gio-hang-responsive {
+    display: inline;
+  }
+  .gio-hang-responsive > .row {
+    padding: 0
+  }
+  .img-gio-hang-responsive {
+    width: 50%;
+    padding-right: 8px;
+  }
+  .checkbox {
+    text-align: center;
+  }
+  .san-pham {
+    padding: 12px 5px;
+  }
+  .ten-san-pham {
+    padding: 12px 5px;
+  }
+  .gia-san-pham {
+    color: #d81400;
+    font-size: 7vw;
+  }
 
-  }
-  .qty-items input {
-    text-align: center !important;
-    border: 0 !important;
-    width: 100%;
-  }
+}

@@ -1,0 +1,94 @@
+.dien-thong-tin {
+  padding: 0 144px;
+  margin-top: 50px;
+}
+mark:nth-child(n + 1) {
+  background: none;
+  color: red;
+}
+select,
+input {
+  width: 20vw;
+}
+.dien-thong-tin form > .row > .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+input,
+select {
+  height: 32px;
+}
+.dien-thong-tin form > .row {
+  padding: 0;
+  margin: 0;
+}
+.row table {
+  margin: 0;
+}
+td,
+th {
+  width: 50%;
+  padding: 8px;
+}
+.hinh-thuc-thanh-toan {
+  padding: 0 144px;
+  margin: 20px 0;
+}
+#tienmat,
+#tructuyen {
+  width: 2vw;
+  height: 1vw;
+}
+.tienmat,
+.tructuyen {
+  width: auto;
+}
+/* .hinh-thuc-thanh-toan > .row >{
+    margin: 0;
+} */
+.hinh-thuc-thanh-toan > .col-md-6 > .row {
+  margin: 0;
+  border: 1px solid black;
+}
+.text-title-tt {
+    padding: 12px;
+}
+.radio-thanh-toan {
+    padding:0 12px;
+}
+.btn-danger {
+    margin: 12px 0 ;
+    padding: 10px 50px;
+    background-color: hsla(360, 100%, 50%, 0.75);
+}
+@media only screen and (max-width: 768px) {
+  .dien-thong-tin, .hinh-thuc-thanh-toan {
+    padding: 0;
+  }
+  .information-user {
+    flex-direction: column;
+  }
+  #username, #numberphone, #tinhTP, #quanhuyen, #xaphuong, #diachi,#email {
+    width: auto;
+  }
+  .thong-tin {
+    margin-bottom: 20px;
+  }
+  .thong-tin > .row {
+    margin-bottom: 8px;
+  }
+  .hinh-thuc-thanh-toan > .col-12 > .row {
+    border: 1px solid black;
+  }
+  .radio-thanh-toan {
+    flex-direction: column-reverse;
+    height: 52px;
+    justify-content: space-between;
+  }
+  #tienmat, #tructuyen {
+    height: 4vw;
+    width: 4vw;
+    margin-right: 4vw;
+  }
+}

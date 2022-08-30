@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Giỏ hàng</title>
+    <title>Thanh Toán</title>
     <link rel="icon" type="image/x-icon" href="./image/favicon.ico" />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -24,9 +24,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/list-product.css" />
-    <link rel="stylesheet" href="./css/gio-hang.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/thanh-toan.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-light">
@@ -61,8 +60,8 @@
               </a>
               <ul class="dropdown-menu">
                 <!-- <li>
-                    <a class="dropdown-item" href="product-list.html">Khuyến Mãi - Quà Tặng</a>
-                  </li> -->
+                  <a class="dropdown-item" href="product-list.html">Khuyến Mãi - Quà Tặng</a>
+                </li> -->
                 <li>
                   <a class="dropdown-item" href="product-list.html"
                     >Sữa Tăng Cân Cho Bé</a
@@ -107,9 +106,14 @@
             <button class="btn btn-outline-success btn-search" type="submit">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-            <button class="btn btn-outline-success btn-shopping" type="submit">
-              <i class="fa-solid fa-cart-shopping"></i>
-            </button>
+            <a href="gio-hang.html">
+              <button
+                class="btn btn-outline-success btn-shopping"
+                type="submit"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </a>
             <button class="btn btn-outline-success btn-user" type="submit">
               <i class="fa-solid fa-user"></i>
             </button>
@@ -117,129 +121,135 @@
         </div>
       </div>
     </nav>
-    <section class="flow">
-      <a href="index.html">Trang chủ</a> <i class="fa-solid fa-angle-right"></i
-      >Giỏ hàng
-    </section>
-    <section class="gio-hang">
-      <div class="row thanh-tools">
-        <div class="col-6 tools-left d-flex align-items-center">
-          <input type="checkbox" />
-          <p>Sản phẩm</p>
-        </div>
-        <div class="col-6 tools-right">
-          <div class="row d-flex align-items-center height-100">
-            <div class="col-3">Đơn giá</div>
-            <div class="col-3">Số lượng</div>
-            <div class="col-3">Thành tiền</div>
-            <div class="col-3">Thao tác</div>
-          </div>
-        </div>
-      </div>
-      <div class="row san-pham-trong-gio">
-        <div class="col-6 tools-left d-flex align-items-center">
-          <input type="checkbox" name="" id="" />
-          <img src="./image/img-detail-small-2.png" alt="" />
-          <p><b>Sữa NAN INFINIPRO A2 800g số 3 (2-6 tuổi)</b></p>
-        </div>
-        <div class="col-6 tools-right">
-          <div
-            class="row d-flex align-items-center height-100 justify-content-center"
-          >
-            <div id="dongia" class="col-3">600.000đ</div>
-            <div class="col-3 d-flex justify-content-center">
-              <div class="d-flex qty-items">
-                <button onclick="reduceProduct()"><i class="fa-solid fa-minus"></i></button>
-                <input onchange="total()" id="soluong" type="text" value="1" min="1" />
-                <button onclick="addProduct ()"><i class="fa-solid fa-plus"></i></button>
+
+    <section class="dien-thong-tin">
+      <form action="">
+        <div class="row">
+          <div class="col-md-6 col-12 thong-tin">
+            <div class="row">
+              <div class="col-12 d-flex justify-content-between align-items-center information-user">
+                <label for="username">Họ và tên <mark>*</mark></label>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  placeholder="Họ tên của bạn"
+                />
               </div>
             </div>
-            <div id="total"  class="col-3">600.000đ</div>
-            <div class="col-3 d-flex justify-content-center">
-              <button type="button" class="btn btn-light">
-                <i class="fa-solid fa-trash-can"></i>
-              </button>
+            <div class="row">
+              <div class="col-12 d-flex justify-content-between align-items-center information-user">
+                <label for="numberphone">Số điện thoại <mark>*</mark></label>
+                <input
+                  type="tel"
+                  name="numberphone"
+                  id="numberphone"
+                  placeholder="Số điện thoại của bạn"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 d-flex justify-content-between align-items-center information-user">
+                <label for="tinhTP">Tỉnh/Thành phố <mark>*</mark></label>
+                <select name="tinhTP" id="tinhTP">
+                  <option value="" selected disabled hidden>
+                    Chọn Thành phố
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 d-flex justify-content-between align-items-center information-user">
+                <label for="quanhuyen">Chọn Quận/Huyện <mark>*</mark></label>
+                <select name="quanhuyen" id="quanhuyen">
+                  <option value="" disabled hidden selected>
+                    Chọn Quận Huyện
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 d-flex justify-content-between align-items-center information-user">
+                <label for="xaphuong">Xã/Phường <mark>*</mark></label>
+                <select name="xaphuong" id="xaphuong">
+                  <option value="" disabled hidden selected>Chọn Xã</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 d-flex align-items-center justify-content-between information-user">
+                <label for="dia-chi">Địa chỉ <mark>*</mark></label>
+                <input type="text" id="diachi" placeholder="Ví dụ: Số 20, Ngõ 90..." />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 d-flex align-items-center justify-content-between information-user">
+                <label for="email">Địa chỉ Email *</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Địa chỉ Email của bạn"
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="gio-hang-responsive">
-      <div class="row">
-        <table class="col-12">
-          <tbody>
-            <tr>
-              <th class="checkbox">
-                <input type="checkbox" />
-              </th>
-              <td>
-                <p class="san-pham">Sản phẩm</p>
-              </td>
-            </tr>
-            <tr>
-              <th class="col-3 checkbox">
-                <input type="checkbox"/>
-              </th>
-              <td>
-                <div class="d-flex ten-san-pham">
-                  <div class="img-gio-hang-responsive">
-                    <img src="./image/img-detail-small.png" alt="" />
-                  </div>
-                  <div>
-                    <div class="row">
-                      Sữa NAN INFINIPRO A2 800g số 3 (2-6 tuổi)
-                    </div>
-                    <div class="row gia-san-pham">600.000đ</div>
-                    <div class="row">
-                      <div class="d-flex qty-items">
-                        <button><i class="fa-solid fa-minus"></i></button>
-                        <input type="text" value="1" min="1" />
-                        <button><i class="fa-solid fa-plus"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-    <section class="bang-chi-tiet">
-      <div class="row">
-        <table class="col-12">
-          <div class="row">
-            <tr>
-              <th class="col-3 detail-items">Số lượng sản phẩm</th>
-              <td class="col-9 detail-items">1</td>
-            </tr>
-            <tr>
-              <th class="col-3 detail-items">Phí vận chuyển</th>
-              <td class="col-9 detail-items">
-                Miễn phí Hà Nội. Khu vực khác có thể phát sinh
-                <a href="#">Xem thêm ...</a>
-              </td>
-            </tr>
-            <tr>
-              <th class="col-3 detail-items">Tông thanh toán</th>
-              <td class="col-9 detail-items">600.000đ</td>
-            </tr>
+          <div class="col-md-6 col-12">
+            <table>
+              <tr>
+                <th>Sản phẩm</th>
+                <th>Giá</th>
+              </tr>
+              <tr>
+                <td>Sữa NAN INFINIPRO A2 800g số 3 (2-6 tuổi)</td>
+                <td>600.000đ</td>
+              </tr>
+              <tr>
+                <th>Số lượng</th>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th>Tạm tính</th>
+                <td>600.000đ</td>
+              </tr>
+              <tr>
+                <th>Phí vận chuyển</th>
+                <td>Miễn Phí Hà Nội <a href="#">Xem thêm ...</a></td>
+              </tr>
+              <tr>
+                <th>Tông thanh toán</th>
+                <td>600.000đ</td>
+              </tr>
+            </table>
           </div>
-        </table>
-      </div>
+        </div>
+      </form>
     </section>
-    <section class="tien-hanh-thanh-toan">
-      <div class="row">
-        <div class="col-12">
-          <a href="thanh-toan.html"
-            ><button type="button" class="btn btn-danger">
-              Tiến hành thanh toán
-            </button></a
-          >
+    <section class="hinh-thuc-thanh-toan row d-flex justify-content-end">
+      <div class="col-md-6 col-12">
+        <div class="row">
+          <div class="text-title-tt">Hình thức thanh toán</div>
+          <div class="radio-thanh-toan d-flex">
+            <div class="col-md-6 col-12 d-flex align-items-center">
+              <input type="radio" name="thanhtoan" id="tienmat" />
+              <label for="tienmat" class="tienmat"
+                >Trả tiền mặt khi giao hàng</label
+              >
+            </div>
+            <div class="col-md-6 col-12 d-flex align-items-center">
+              <input type="radio" name="thanhtoan" id="tructuyen" />
+              <label for="tructuyen" class="tructuyen"
+                >Thanh toán trực tuyến</label
+              >
+            </div>
+          </div>
+          <div class="btns-submit">
+            <button type="button" class="btn btn-danger">Đặt Hàng</button>
+            
+          </div>
         </div>
       </div>
     </section>
-
     <section class="box-commit">
       <div class="row">
         <div class="col-12 col-md-3 box-commit-items d-flex align-items-center">
@@ -321,11 +331,11 @@
           </h5>
           <ul class="menu-footer-title">
             <li><a href="#">Hướng Dẫn Mua Hàng</a></li>
-            <li><a href="">Chính Sách Bảo Hành</a></li>
-            <li><a href="">Thanh Toán</a></li>
-            <li><a href="">Trả Hàng & Hoàn Tiền</a></li>
-            <li><a href="">Hướng Dẫn Bán Hàng</a></li>
-            <li><a href="">Trung tâm trợ giúp</a></li>
+            <li><a href="#">Chính Sách Bảo Hành</a></li>
+            <li><a href="#">Thanh Toán</a></li>
+            <li><a href="#">Trả Hàng & Hoàn Tiền</a></li>
+            <li><a href="#">Hướng Dẫn Bán Hàng</a></li>
+            <li><a href="#">Trung tâm trợ giúp</a></li>
           </ul>
         </div>
         <div class="col-md-3 col-6 footer-list">
@@ -334,10 +344,10 @@
           </h5>
           <ul class="menu-footer-title">
             <li><a href="#">Giới thiệu về Công ty NoNa</a></li>
-            <li><a href="">Tuyển dụng khối Văn phòng</a></li>
-            <li><a href="">Tuyển dụng Khối siêu thị</a></li>
-            <li><a href="">Chính sách bảo mật</a></li>
-            <li><a href="">Điều khoản sử dụng</a></li>
+            <li><a href="#">Tuyển dụng khối Văn phòng</a></li>
+            <li><a href="#">Tuyển dụng Khối siêu thị</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#">Điều khoản sử dụng</a></li>
           </ul>
         </div>
         <div class="col-md-3 col-6 footer-list">
@@ -346,10 +356,10 @@
           </h5>
           <ul class="menu-footer-title">
             <li><a href="#">Email: cskh@nona.com</a></li>
-            <li><a href="">Điện thoại: 023 xxxx 3374</a></li>
-            <li><a href="">ĐKKD: TN-TT-HN</a></li>
+            <li><a href="#">Điện thoại: 023 xxxx 3374</a></li>
+            <li><a href="#">ĐKKD: TN-TT-HN</a></li>
             <li>
-              <a href="">Văn phòng: Tầng X Tòa nhà X, 0Z T, P. A, Q. D, HN</a>
+              <a href="#">Văn phòng: Tầng X Tòa nhà X, 0Z T, P. A, Q. D, HN</a>
             </li>
           </ul>
         </div>
@@ -362,10 +372,10 @@
               <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </li>
             <li>
-              <a href=""><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
             </li>
             <li>
-              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
             </li>
           </ul>
         </div>
@@ -383,6 +393,5 @@
       integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/main.js"></script>
   </body>
 </html>

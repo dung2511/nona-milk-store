@@ -58,9 +58,6 @@
                 Danh sách sản phẩm
               </a>
               <ul class="dropdown-menu">
-                <!-- <li>
-                  <a class="dropdown-item" href="product-list.html">Khuyến Mãi - Quà Tặng</a>
-                </li> -->
                 <li>
                   <a class="dropdown-item" href="product-list.html"
                     >Sữa Tăng Cân Cho Bé</a
@@ -105,8 +102,11 @@
             <button class="btn btn-outline-success btn-search" type="submit">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-            <button class="btn btn-outline-success btn-shopping" type="submit">
+            <button class="btn btn-outline-success btn-shopping position-relative" type="submit">
               <i class="fa-solid fa-cart-shopping"></i>
+              <span id="badge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                1
+              </span>
             </button>
             <button class="btn btn-outline-success btn-user" type="submit">
               <i class="fa-solid fa-user"></i>
@@ -203,7 +203,10 @@
                   Sữa Meiji Infant Formula 800g (0-12 tháng)
                 </h5>
                 <p class="card-money">509.000đ</p>
-                <a href="#" class="btn btn-outline-primary"
+                <a
+                  href="#"
+                  onclick="addToCart()"
+                  class="btn btn-outline-primary"
                   >Thêm vào giỏ hàng <i class="fa-solid fa-cart-shopping"></i
                 ></a>
               </div>
@@ -219,7 +222,10 @@
                   Sữa Meiji Infant Formula 800g (0-12 tháng)
                 </h5>
                 <p class="card-money">509.000đ</p>
-                <a href="#" class="btn btn-outline-primary"
+                <a
+                  onclick="addToCart()"
+                  href="#"
+                  class="btn btn-outline-primary"
                   >Thêm vào giỏ hàng <i class="fa-solid fa-cart-shopping"></i
                 ></a>
               </div>
@@ -235,7 +241,10 @@
                   Sữa Meiji Infant Formula 800g (0-12 tháng)
                 </h5>
                 <p class="card-money">509.000đ</p>
-                <a href="#" class="btn btn-outline-primary"
+                <a
+                  onclick="addToCart()"
+                  href="#"
+                  class="btn btn-outline-primary"
                   >Thêm vào giỏ hàng <i class="fa-solid fa-cart-shopping"></i
                 ></a>
               </div>
@@ -251,7 +260,10 @@
                   Sữa Meiji Infant Formula 800g (0-12 tháng)
                 </h5>
                 <p class="card-money">509.000đ</p>
-                <a href="#" class="btn btn-outline-primary"
+                <a
+                  onclick="addToCart()"
+                  href="#"
+                  class="btn btn-outline-primary"
                   >Thêm vào giỏ hàng <i class="fa-solid fa-cart-shopping"></i
                 ></a>
               </div>
@@ -281,7 +293,10 @@
                   Sữa Meiji Infant Formula 800g (0-12 tháng)
                 </h5>
                 <p class="card-money">509.000đ</p>
-                <a href="#" class="btn btn-outline-primary"
+                <a
+                  onclick="addToCart()"
+                  href="#"
+                  class="btn btn-outline-primary"
                   >Thêm vào giỏ hàng <i class="fa-solid fa-cart-shopping"></i
                 ></a>
               </div>
@@ -297,7 +312,10 @@
                   Sữa Meiji Infant Formula 800g (0-12 tháng)
                 </h5>
                 <p class="card-money">509.000đ</p>
-                <a href="#" class="btn btn-outline-primary"
+                <a
+                  onclick="addToCart()"
+                  href="#"
+                  class="btn btn-outline-primary"
                   >Thêm vào giỏ hàng <i class="fa-solid fa-cart-shopping"></i
                 ></a>
               </div>
@@ -313,7 +331,10 @@
                   Sữa Meiji Infant Formula 800g (0-12 tháng)
                 </h5>
                 <p class="card-money">509.000đ</p>
-                <a href="#" class="btn btn-outline-primary"
+                <a
+                  onclick="addToCart()"
+                  href="#"
+                  class="btn btn-outline-primary"
                   >Thêm vào giỏ hàng <i class="fa-solid fa-cart-shopping"></i
                 ></a>
               </div>
@@ -329,7 +350,10 @@
                   Sữa Meiji Infant Formula 800g (0-12 tháng)
                 </h5>
                 <p class="card-money">509.000đ</p>
-                <a href="#" class="btn btn-outline-primary"
+                <a
+                  onclick="addToCart()"
+                  href="#"
+                  class="btn btn-outline-primary"
                   >Thêm vào giỏ hàng <i class="fa-solid fa-cart-shopping"></i
                 ></a>
               </div>
@@ -349,24 +373,6 @@
       </div>
       <div class="row list-news-items">
         <div class="col-md-3 col-6 news-list">
-            <div class="card">
-              <img src="./image/news-1.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="news-list-title">
-                  Dinh Dưỡng, Sức Khỏe & Sống Vui Khỏe
-                </h5>
-                <p class="text-news">
-                  Chiến lược về Dinh dưỡng và Sống Vui Khỏe thể hiện xuyên suốt
-                  qua các dòng sản phẩm của Nestlé. Bạn sẽ nắm bắt cách sở hữu
-                  một chế độ ăn uống lành mạnh qua chuyên mục này.
-                </p>
-                <a href="#" class="more-read">
-                  Đọc thêm <i class="fa-solid fa-angles-right"></i>
-                </a>
-              </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-6 news-list">
           <div class="card">
             <img src="./image/news-1.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -375,10 +381,10 @@
               </h5>
               <p class="text-news">
                 Chiến lược về Dinh dưỡng và Sống Vui Khỏe thể hiện xuyên suốt
-                qua các dòng sản phẩm của Nestlé. Bạn sẽ nắm bắt cách sở hữu
-                một chế độ ăn uống lành mạnh qua chuyên mục này.
+                qua các dòng sản phẩm của Nestlé. Bạn sẽ nắm bắt cách sở hữu một
+                chế độ ăn uống lành mạnh qua chuyên mục này.
               </p>
-              <a href ="#" class="more-read">
+              <a href="#" class="more-read">
                 Đọc thêm <i class="fa-solid fa-angles-right"></i>
               </a>
             </div>
@@ -393,10 +399,10 @@
               </h5>
               <p class="text-news">
                 Chiến lược về Dinh dưỡng và Sống Vui Khỏe thể hiện xuyên suốt
-                qua các dòng sản phẩm của Nestlé. Bạn sẽ nắm bắt cách sở hữu
-                một chế độ ăn uống lành mạnh qua chuyên mục này.
+                qua các dòng sản phẩm của Nestlé. Bạn sẽ nắm bắt cách sở hữu một
+                chế độ ăn uống lành mạnh qua chuyên mục này.
               </p>
-              <a href ="#" class="more-read">
+              <a href="#" class="more-read">
                 Đọc thêm <i class="fa-solid fa-angles-right"></i>
               </a>
             </div>
@@ -411,10 +417,28 @@
               </h5>
               <p class="text-news">
                 Chiến lược về Dinh dưỡng và Sống Vui Khỏe thể hiện xuyên suốt
-                qua các dòng sản phẩm của Nestlé. Bạn sẽ nắm bắt cách sở hữu
-                một chế độ ăn uống lành mạnh qua chuyên mục này.
+                qua các dòng sản phẩm của Nestlé. Bạn sẽ nắm bắt cách sở hữu một
+                chế độ ăn uống lành mạnh qua chuyên mục này.
               </p>
-              <a href ="#" class="more-read">
+              <a href="#" class="more-read">
+                Đọc thêm <i class="fa-solid fa-angles-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 news-list">
+          <div class="card">
+            <img src="./image/news-1.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="news-list-title">
+                Dinh Dưỡng, Sức Khỏe & Sống Vui Khỏe
+              </h5>
+              <p class="text-news">
+                Chiến lược về Dinh dưỡng và Sống Vui Khỏe thể hiện xuyên suốt
+                qua các dòng sản phẩm của Nestlé. Bạn sẽ nắm bắt cách sở hữu một
+                chế độ ăn uống lành mạnh qua chuyên mục này.
+              </p>
+              <a href="#" class="more-read">
                 Đọc thêm <i class="fa-solid fa-angles-right"></i>
               </a>
             </div>
@@ -492,5 +516,6 @@
       integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
