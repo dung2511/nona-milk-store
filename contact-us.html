@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Giỏ hàng</title>
+    <title>Liên Hệ</title>
     <link rel="icon" type="image/x-icon" href="./image/favicon.ico" />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -17,6 +17,8 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/contact-us.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -24,10 +26,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/list-product.css" />
-    <link rel="stylesheet" href="./css/gio-hang.css" />
   </head>
+
   <body>
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
@@ -140,131 +140,33 @@
     </nav>
     <section class="flow">
       <a href="index.html">Trang chủ</a>
-      <i class="fa-solid fa-angle-right"></i>Giỏ hàng
+      <i class="fa-solid fa-angle-right"></i>Liên Hệ
     </section>
-    <section class="gio-hang">
-      <div class="row thanh-tools">
-        <div class="col-6 tools-left d-flex align-items-center">
-          <input type="checkbox" />
-          <p>Sản phẩm</p>
-        </div>
-        <div class="col-6 tools-right">
-          <div class="row d-flex align-items-center height-100">
-            <div class="col-3">Đơn giá</div>
-            <div class="col-3">Số lượng</div>
-            <div class="col-3">Thành tiền</div>
-            <div class="col-3">Thao tác</div>
-          </div>
-        </div>
-      </div>
-      <div class="row san-pham-trong-gio">
-        <div class="col-6 tools-left d-flex align-items-center">
-          <input type="checkbox" name="" id="" />
-          <img src="./image/img-detail-small-2.png" alt="" />
-          <p><b>Sữa NAN INFINIPRO A2 800g số 3 (2-6 tuổi)</b></p>
-        </div>
-        <div class="col-6 tools-right">
-          <div
-            class="row d-flex align-items-center height-100 justify-content-center"
-          >
-            <div id="dongia" class="col-3">600.000đ</div>
-            <div class="col-3 d-flex justify-content-center">
-              <div class="d-flex qty-items">
-                <button onclick="reduceProduct()">
-                  <i class="fa-solid fa-minus"></i>
-                </button>
-                <input id="soluong" type="text" value="1" min="1" />
-                <button onclick="addProduct ()">
-                  <i class="fa-solid fa-plus"></i>
-                </button>
-              </div>
-            </div>
-            <div id="total" class="col-3">600000đ</div>
-            <div class="col-3 d-flex justify-content-center">
-              <button type="button" class="btn btn-light">
-                <i class="fa-solid fa-trash-can"></i>
-              </button>
-            </div>
-          </div>
-        </div>
+    <section class="contact">
+      <div class="form">
+        <form action="" id="form1">
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Họ tên"
+          /><br />
+          <input
+            type="text"
+            id="femail"
+            name="femail"
+            placeholder="Địa chỉ Email"
+          /><br />
+          <input
+            type="text"
+            id="fcontent"
+            name="fcontent"
+            placeholder="Nội dung yêu cầu"
+          /><br />
+          <input type="submit" value="Gửi yêu cầu" />
+        </form>
       </div>
     </section>
-    <section class="gio-hang-responsive">
-      <div class="row">
-        <table class="col-12">
-          <tbody>
-            <tr>
-              <th class="checkbox">
-                <input type="checkbox" />
-              </th>
-              <td>
-                <p class="san-pham">Sản phẩm</p>
-              </td>
-            </tr>
-            <tr>
-              <th class="col-3 checkbox">
-                <input type="checkbox" />
-              </th>
-              <td>
-                <div class="d-flex ten-san-pham">
-                  <div class="img-gio-hang-responsive">
-                    <img src="./image/img-detail-small.png" alt="" />
-                  </div>
-                  <div>
-                    <div class="row">
-                      Sữa NAN INFINIPRO A2 800g số 3 (2-6 tuổi)
-                    </div>
-                    <div id="gia-san-pham" class="row gia-san-pham">600.000đ</div>
-                    <div class="row">
-                      <div class="d-flex qty-items">
-                        <button onclick="reduceRes()"><i class="fa-solid fa-minus"></i></button>
-                        <input id="soluongresponsive" type="text" value="1" min="1" />
-                        <button onclick="addRes()"><i class="fa-solid fa-plus"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-    <section class="bang-chi-tiet">
-      <div class="row">
-        <table class="col-12">
-          <div class="row">
-            <tr>
-              <th class="col-3 detail-items">Số lượng sản phẩm</th>
-              <td id="soluong-detail" class="col-9 detail-items">1</td>
-            </tr>
-            <tr>
-              <th class="col-3 detail-items">Phí vận chuyển</th>
-              <td class="col-9 detail-items">
-                Miễn phí Hà Nội. Khu vực khác có thể phát sinh
-                <a href="#">Xem thêm ...</a>
-              </td>
-            </tr>
-            <tr>
-              <th class="col-3 detail-items">Tông thanh toán</th>
-              <td id="price-last" class="col-9 detail-items">600.000đ</td>
-            </tr>
-          </div>
-        </table>
-      </div>
-    </section>
-    <section class="tien-hanh-thanh-toan">
-      <div class="row">
-        <div class="col-12">
-          <a href="thanh-toan.html"
-            ><button type="button" class="btn btn-danger">
-              Tiến hành thanh toán
-            </button></a
-          >
-        </div>
-      </div>
-    </section>
-
     <section class="box-commit">
       <div class="row">
         <div class="col-12 col-md-3 box-commit-items d-flex align-items-center">
@@ -404,10 +306,9 @@
     ></script>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/main.js"></script>
   </body>
 </html>

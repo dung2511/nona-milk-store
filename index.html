@@ -99,18 +99,39 @@
             </li>
           </ul>
           <form class="d-flex header-icon" role="search">
-            <button class="btn btn-outline-success btn-search" type="submit">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-            <button class="btn btn-outline-success btn-shopping position-relative" type="submit">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <span id="badge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                1
-              </span>
-            </button>
-            <button class="btn btn-outline-success btn-user" type="submit">
-              <i class="fa-solid fa-user"></i>
-            </button>
+            <div
+              class="example"
+              action="/action_page.php"
+              
+            >
+              <input type="text" placeholder="Search.." name="search2" />
+              <a href="search.html"
+                class="btn btn-search position-absolute"
+               
+                
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </div>
+            <a href="gio-hang.html">
+              <div
+                class="btn btn-outline-success btn-shopping position-relative"
+                type="submit"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span
+                  id="badge"
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  1
+                </span>
+              </div>
+            </a>
+            <a href="login.html">
+              <button class="btn btn-outline-success btn-user" type="button">
+                <i class="fa-solid fa-user"></i>
+              </button>
+            </a>
           </form>
         </div>
       </div>

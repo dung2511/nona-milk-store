@@ -1,0 +1,27 @@
+.flow {
+  padding: 0 144px;
+  margin: 50px 0;
+}
+.fa-angle-right {
+  padding: 0 12px;
+}
+h1 {
+  color: #356f9c;
+}
+.title {
+  padding: 0 144px;
+}
+h2 {
+  font-size: 1.4vw;
+  color: #5e9ac8;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .flow,
+  .title {
+    padding: 0;
+  }
+  h2 {
+    font-size: 4vw;
+  }
+}

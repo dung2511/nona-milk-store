@@ -1,0 +1,35 @@
+.fa-circle-check {
+    font-weight: 900;
+    font-size: 7vw;
+    color: #57df00;
+}
+.done {
+    padding: 0 144px;
+    margin: 150px 0;
+}
+.text-confirm {
+    text-align: center;
+    font-size: 3vw;
+    padding-top: 12px;
+    color: #57df00;
+}
+.back-home {
+    text-align: center;
+    font-size: 1.5vw;
+    padding-top: 12px;
+}
+@media only screen and (max-width: 768px) {
+    .done {
+        padding: 0;
+        margin: 75px 0;
+    }
+    .fa-circle-check {
+        font-size: 12vw;
+    }
+    .text-confirm {
+        font-size: 5vw;
+    }
+    .back-home a{
+        font-size: 12px;
+    }
+}

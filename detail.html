@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Chi tiết sản phẩm</title>
+    <title>Sữa Meiji Growing up Formula 800g (12-36 tháng)</title>
     <link rel="icon" type="image/x-icon" href="./image/favicon.ico" />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -60,9 +60,6 @@
                 Danh sách sản phẩm
               </a>
               <ul class="dropdown-menu">
-                <!-- <li>
-                  <a class="dropdown-item" href="product-list.html">Khuyến Mãi - Quà Tặng</a>
-                </li> -->
                 <li>
                   <a class="dropdown-item" href="product-list.html"
                     >Sữa Tăng Cân Cho Bé</a
@@ -104,46 +101,67 @@
             </li>
           </ul>
           <form class="d-flex header-icon" role="search">
-            <button class="btn btn-outline-success btn-search" type="submit">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
+            <div class="example" action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search2" />
+              <a href="search.html" class="btn btn-search position-absolute">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </div>
             <a href="gio-hang.html">
-              <button
-                class="btn btn-outline-success btn-shopping"
+              <div
+                class="btn btn-outline-success btn-shopping position-relative"
                 type="submit"
               >
                 <i class="fa-solid fa-cart-shopping"></i>
+                <span
+                  id="badge"
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  1
+                </span>
+              </div>
+            </a>
+            <a href="login.html">
+              <button class="btn btn-outline-success btn-user" type="button">
+                <i class="fa-solid fa-user"></i>
               </button>
             </a>
-            <button class="btn btn-outline-success btn-user" type="submit">
-              <i class="fa-solid fa-user"></i>
-            </button>
           </form>
         </div>
       </div>
     </nav>
     <section class="flow">
       <a href="index.html">Trang chủ</a> <i class="fa-solid fa-angle-right"></i
-      ><a href="product-list.html">Sản phẩm</a><i class="fa-solid fa-angle-right"></i>Sữa NAN
-      INFINIPRO A2 800g số 3 (2-6 tuổi)
+      ><a href="product-list.html">Sản phẩm</a
+      ><i class="fa-solid fa-angle-right"></i>Sữa Meiji Growing up Formula 800g
+      (12-36 tháng)
     </section>
 
     <section class="detail">
       <div class="row">
         <div class="col-12 col-md-6 d-flex">
-          <div class="img-details-small col-2 reponsive-image">
-            <img src="./image/img-detail-small.png" alt="" />
-            <img src="./image/img-detail-small-2.png" alt="" />
-            <img src="./image/img-detail-small-2.png" alt="" />
-            <img src="./image/img-detail-small-2.png" alt="" />
+          <div class="img-details-small list-image col-2 reponsive-image">
+            <div class="item-img">
+              <img src="./image/img-detail-small.png" alt="" />
+            </div>
+
+            <div class="item-img">
+              <img src="./image/img-detail-small-2.png" alt="" />
+            </div>
+            <div class="item-img">
+              <img src="./image/img-detail-small-3.jpg" alt="" />
+            </div>
+            <div class="item-img">
+              <img src="./image/img-detail-small-4.jpg" alt="" />
+            </div>
           </div>
           <div class="img-details-big col-10 reponsive-image">
-            <img src="./image/sua-meiji.jpg" alt="" />
+            <img class="img-feature" src="./image/sua-meiji.jpg" alt="" />
           </div>
         </div>
         <div class="col-12 col-md-6">
           <div class="name-product">
-            <p>Sữa NAN INFINIPRO A2 800g số 3 (2-6 tuổi)</p>
+            <p>Sữa Meiji Growing up Formula 800g (12-36 tháng)</p>
           </div>
           <div class="reviews d-flex">
             <div class="reviews-list">
@@ -161,22 +179,44 @@
           <div class="price-product">
             <p>600.000đ</p>
           </div>
+          <div class="woocommerce-product">
+            <p>
+              <i class="fa-regular fa-check"></i>Thương hiệu: MEIJI NHẬT BẢN
+            </p>
+            <p>
+              <i class="fa-regular fa-check"></i>Nhập khẩu nguyên lon từ Nhật
+              Bản
+            </p>
+            <p>
+              <i class="fa-regular fa-check"></i>Dinh dưỡng giúp trẻ phát triển
+              toàn diện
+            </p>
+          </div>
           <div class="qty">
             <div class="row">
               <div class="d-flex qty-items">
-                <button><i class="fa-solid fa-minus"></i></button>
-                <input id="soluong" type="number" value="1" min="1" />
-                <button ><i class="fa-solid fa-plus"></i></button>
+                <button onclick="reduce()">
+                  <i class="fa-solid fa-minus"></i>
+                </button>
+                <input id="soluong" type="text" value="1" min="1" />
+                <button onclick="add ()">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
               </div>
             </div>
             <div class="row">
               <div class="col-6 btn-add-to-cart">
-                <a href="#" class="btn btn-outline-primary"
+                <a
+                  onclick="addToCart()"
+                  href="#"
+                  class="btn btn-outline-primary"
                   >Thêm vào giỏ hàng <i class="fa-solid fa-cart-shopping"></i
                 ></a>
               </div>
               <div class="col-6 btn-buy-now">
-                <a href="#" class="btn btn-outline-primary btn-click-buy"
+                <a
+                  href="thanh-toan.html"
+                  class="btn btn-outline-primary btn-click-buy"
                   >Mua ngay</a
                 >
               </div>
@@ -185,24 +225,63 @@
         </div>
       </div>
     </section>
-    <section class="product-detail">
+    <section id="chi-tiet-san-pham" class="product-detail">
       <div class="row sticky-top">
         <div class="col-md-9 col-12 danh-sach-detail">
-          <div
-            class="row chi-tiet d-flex justify-content-center align-items-center"
+          <ul
+            class="nav nav-pills mb-3 d-flex justify-content-around"
+            id="pills-tab"
+            role="tablist"
           >
-            <div class="col-4 chi-tiet-san-san-pham text-center">
-              <a href=""><button>Chi tiết sản phẩm</button></a>
-              
-            </div>
-            <div class="col-4 danh-gia text-center">
-              <a href="#danh-gia"><button>Đánh giá</button></a>
-              
-            </div>
-            <div class="col-4 thao-luan-hoi-dap text-center">
-              <button>Thảo luận & hỏi đáp</button>
-            </div>
-          </div>
+            <li class="nav-item col-4" role="presentation">
+              <a href="#chi-tiet-san-pham"
+                ><button
+                  class="nav-link active"
+                  id="pills-home-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-home"
+                  aria-selected="true"
+                >
+                  Chi tiết sản phẩm
+                </button></a
+              >
+            </li>
+            <li class="nav-item col-4" role="presentation">
+              <a href="#danh-gia"
+                ><button
+                  class="nav-link"
+                  id="pills-profile-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-profile"
+                  aria-selected="false"
+                >
+                  Đánh giá
+                </button></a
+              >
+            </li>
+            <li class="nav-item col-4" role="presentation">
+              <a href="#hoi-dap">
+                <button
+                  class="nav-link"
+                  id="pills-contact-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-contact"
+                  aria-selected="false"
+                >
+                  Thảo luận & hỏi đáp
+                </button>
+              </a>
+            </li>
+          </ul>
         </div>
 
         <div class="col-3 thong-tin-bo-ich">
@@ -274,6 +353,32 @@
             </tr>
           </div>
         </table>
+        <div class="col-md-3 d-none d-sm-block ttbi">
+          <div class="row">
+            <div class="col-6">
+              <img src="./image/ttbi-1.webp" alt="" />
+            </div>
+            <div class="col-6">
+              Mua sữa Aptamil nhập khẩu chính hãng tại Con Cưng
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <img src="./image/ttbi-2.webp" alt="" />
+            </div>
+            <div class="col-6">
+              Công thức Synbiotic độc quyền trong sữa Aptakid có gì nổi bật?
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <img src="./image/ttbi-3.webp" alt="" />
+            </div>
+            <div class="col-6">
+              So sánh sữa Aptamil Anh và Aptamil Úc: Loại nào tốt hơn?
+            </div>
+          </div>
+        </div>
         <div class="col-md-9 col-12 thong-tin-chi-tiet">
           <p>
             Sữa mẹ là thức ăn tốt nhất cho sức khỏe và sự phát triển toàn diện
@@ -289,37 +394,41 @@
             sữa, các hạt tơi mịn, không bị vón cục.
           </p>
           <img src="./image/img-detail.png" alt="" />
-          <p><b>Dinh dưỡng nổi bật</b></p>
+          <h5>Dinh dưỡng nổi bật</h5>
           <p>DHA, ARA, FOS, Lactadherin, α-Lactalbumin, 5 Nucleotides</p>
           <img src="./image/img-detail-2.png" alt="" />
+
+          <h5>Tập trung phát triển não bộ:</h5>
           <p>
-            <b>Tập trung phát triển não bộ: </b>Việc bổ sung DHA (100mg/100g) và
-            ARA (100mg/100g) cùng sự hỗ trợ của Taurine, Choline, Acid folic, vi
-            chất sắt, kẽm,... giúp não bộ của trẻ phát triển một cách tốt nhất
-            ngay từ giai đoạn sơ sinh.
+            Việc bổ sung DHA (100mg/100g) và ARA (100mg/100g) cùng sự hỗ trợ của
+            Taurine, Choline, Acid folic, vi chất sắt, kẽm,... giúp não bộ của
+            trẻ phát triển một cách tốt nhất ngay từ giai đoạn sơ sinh.
           </p>
+
+          <h5>Hỗ trợ tiêu hóa và hấp thu:</h5>
           <p>
-            <b>Hỗ trợ tiêu hóa và hấp thu:</b> FOS có trong sản phẩm Meiji là
-            chất xơ hòa tan giúp tăng lợi khuẩn đường ruột Bifidus từ đó cải
-            thiện tình trạng tiêu hóa của trẻ. Chất đạm khó tiêu β-lactoglobulin
-            được phân giải một cách có chọn lọc thành trạng thái dễ tiêu hóa.
+            FOS có trong sản phẩm Meiji là chất xơ hòa tan giúp tăng lợi khuẩn
+            đường ruột Bifidus từ đó cải thiện tình trạng tiêu hóa của trẻ. Chất
+            đạm khó tiêu β-lactoglobulin được phân giải một cách có chọn lọc
+            thành trạng thái dễ tiêu hóa.
           </p>
           <img class="margin-bottom" src="./image/img-detail-3.png" alt="" />
           <img class="margin-bottom" src="./image/img-detail-4.png" alt="" />
+
+          <h5>Tăng cường sức đề kháng:</h5>
           <p>
-            <b>Tăng cường sức đề kháng:</b>Việc bổ sung 5 loại Nucleotides có
-            trong sữa mẹ (Disodium 5'-cytidylate, Disodium 5'-uridylate,
-            Disodium 5'-inosinate, Disodium 5'-guanylate, 5'-Adenylic acid) cộng
-            thêm vitamin C, vitamin E giúp bé phòng chống những bệnh dễ gặp phải
-            trong giai đoạn mới chào đời. Bên cạnh đó, Meiji Infant Formula còn
-            được bổ sung lactadherin nhằm phòng ngừa nhiễm trùng đường ruột do
-            virus gây ra.
+            Việc bổ sung 5 loại Nucleotides có trong sữa mẹ (Disodium
+            5'-cytidylate, Disodium 5'-uridylate, Disodium 5'-inosinate,
+            Disodium 5'-guanylate, 5'-Adenylic acid) cộng thêm vitamin C,
+            vitamin E giúp bé phòng chống những bệnh dễ gặp phải trong giai đoạn
+            mới chào đời. Bên cạnh đó, Meiji Infant Formula còn được bổ sung
+            lactadherin nhằm phòng ngừa nhiễm trùng đường ruột do virus gây ra.
           </p>
           <img class="margin-bottom" src="./image/img-detail-5.png" alt="" />
-          <p class="margin-bottom"><b>Hướng dẫn sử dụng</b></p>
+          <div class="margin-bottom"><h5>Hướng dẫn sử dụng</h5></div>
           <img class="margin-bottom" src="./image/img-detail-6.png" alt="" />
           <img class="margin-bottom" src="./image/img-detail-7.png" alt="" />
-          <p><b>Hướng dẫn bảo quản</b></p>
+          <h5>Hướng dẫn bảo quản</h5>
           <img src="./image/img-detail-8.png" alt="" />
         </div>
       </div>
@@ -419,6 +528,9 @@
             </div>
           </div>
         </div>
+      </div>
+      <div id="hoi-dap" class="row">
+        <div class="col-12">Hỏi đáp</div>
       </div>
     </section>
     <section class="box-commit">
@@ -564,5 +676,6 @@
       integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

@@ -1,84 +1,95 @@
 .products {
-    margin: 0 144px;
+  margin: 0 144px;
+  margin-top: 20px;
+}
+.flow {
+  padding: 0 144px;
+  margin: 50px 0;
+}
+.fa-angle-right {
+  padding: 0 12px;
 }
 .me-3 {
-    margin-right:0 !important ;
+  margin-right: 0 !important ;
 }
 .product {
-    margin: 0;
+  margin: 0;
+}
+.title-list {
+  color: #007bff;
 }
 .milk-items {
-    padding: 8px 0 !important;
-    text-align: left;
+  padding: 8px 8px !important;
+  text-align: left;
 }
-.tab-content{
-    padding: 0%;
+.tab-content {
+  padding: 0%;
 }
 .box-commit {
-    margin-top: 50px;
-    padding:20px 144px;
-    background-color: #f8f9fa!important;
-
+  margin-top: 50px;
+  padding: 20px 144px;
+  background-color: #f8f9fa !important;
 }
 .box-commit-items {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 .box-commit i {
-    color: #20a1f4;
-    font-size: 3em;
-    padding-right: 2px;
+  color: #20a1f4;
+  font-size: 3em;
+  padding-right: 2px;
 }
 .text-commit p {
-    margin-bottom: 0%;
+  margin-bottom: 0%;
 }
 .text-commit {
-    padding-left: 8px;
+  padding-left: 8px;
 }
 .information {
-    margin-top: 32px;
-    padding: 20px 144px;
+  margin-top: 32px;
+  padding: 20px 144px;
 }
 .info-items {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .information a {
-    text-decoration: none !important;
-    color: #000;
-    transition: 0.7s;
+  text-decoration: none !important;
+  color: #000;
+  transition: 0.7s;
 }
 .information a:hover {
-    color: #1872b2!important;
+  color: #1872b2 !important;
 }
 .item-featured h5 {
-    transition: 0.7s;
+  transition: 0.7s;
 }
 .item-featured h5:hover {
-    color: #d06a00;
+  color: #d06a00;
 }
 .item-featured {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 @media only screen and (max-width: 768px) {
-    body {
-        padding: 0 15px;
-    }
-    .products {
-        margin: 0;
-    }
-    .item-featured {
-        margin-bottom: 0rem;
-    }
-    .information, .box-commit {
-        padding: 0 15px;
-    }
-    .nav-pills {
-        padding-right: 0 !important;
-    }
-    .row {
-        --bs-gutter-x: 0.5rem;
-    }
-    .card-body {
-        padding: 16px 8px;
-    }
+  body, .flow {
+    padding: 0 15px;
+  }
+  .products {
+    margin: 0;
+  }
+  .item-featured {
+    margin-bottom: 0rem;
+  }
+  .information,
+  .box-commit {
+    padding: 0 15px;
+  }
+  .nav-pills {
+    padding-right: 0 !important;
+  }
+  .row {
+    --bs-gutter-x: 0.5rem;
+  }
+  .card-body {
+    padding: 16px 8px;
+  }
 }

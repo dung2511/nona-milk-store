@@ -59,9 +59,6 @@
                 Danh sách sản phẩm
               </a>
               <ul class="dropdown-menu">
-                <!-- <li>
-                  <a class="dropdown-item" href="product-list.html">Khuyến Mãi - Quà Tặng</a>
-                </li> -->
                 <li>
                   <a class="dropdown-item" href="product-list.html"
                     >Sữa Tăng Cân Cho Bé</a
@@ -103,20 +100,47 @@
             </li>
           </ul>
           <form class="d-flex header-icon" role="search">
-            <button class="btn btn-outline-success btn-search" type="submit">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-            <button class="btn btn-outline-success btn-shopping" type="submit">
-              <i class="fa-solid fa-cart-shopping"></i>
-            </button>
-            <button class="btn btn-outline-success btn-user" type="submit">
-              <i class="fa-solid fa-user"></i>
-            </button>
+            <div
+              class="example"
+              action="/action_page.php"
+              
+            >
+              <input type="text" placeholder="Search.." name="search2" />
+              <a href="search.html"
+                class="btn btn-search position-absolute"
+               
+                
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </div>
+            <a href="gio-hang.html">
+              <div
+                class="btn btn-outline-success btn-shopping position-relative"
+                type="submit"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span
+                  id="badge"
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  1
+                </span>
+              </div>
+            </a>
+            <a href="login.html">
+              <button class="btn btn-outline-success btn-user" type="button">
+                <i class="fa-solid fa-user"></i>
+              </button>
+            </a>
           </form>
         </div>
       </div>
     </nav>
-    <section class="flow"></section>
+    <section class="flow">
+      <a href="index.html">Trang chủ</a>
+      <i class="fa-solid fa-angle-right"></i>Sản phẩm
+    </section>
     <section class="products">
       <div class="d-flex align-items-start row product">
         <div
@@ -232,6 +256,9 @@
             aria-labelledby="v-pills-weight-gain-tab"
             tabindex="0"
           >
+            <div class="row">
+              <h2 class="title-list">Sữa Tăng Cân Cho Bé</h2>
+            </div>
             <div class="row">
               <div class="col-6 item-featured col-md-3 reponsive-image">
                 <a href="detail.html">
@@ -521,6 +548,9 @@
             tabindex="0"
           >
             <div class="row">
+              <h2 class="title-list">Sữa Tăng Chiều Cao</h2>
+            </div>
+            <div class="row">
               <div class="col-6 item-featured col-md-3 reponsive-image">
                 <a href="detail.html">
                   <div class="card">
@@ -598,6 +628,9 @@
             aria-labelledby="v-pills-goat-milk-tab"
             tabindex="0"
           >
+            <div class="row">
+              <h2 class="title-list">Sữa Dê</h2>
+            </div>
             <div class="row">
               <div class="col-6 item-featured col-md-3 reponsive-image">
                 <a href="detail.html">
@@ -677,6 +710,9 @@
             tabindex="0"
           >
             <div class="row">
+              <h2 class="title-list">Sữa Đặc Trị</h2>
+            </div>
+            <div class="row">
               <div class="col-6 item-featured col-md-3 reponsive-image">
                 <a href="detail.html">
                   <div class="card">
@@ -754,6 +790,9 @@
             aria-labelledby="v-pills-pregnant-milk-tab"
             tabindex="0"
           >
+            <div class="row">
+              <h2 class="title-list">Sữa Bầu</h2>
+            </div>
             <div class="row">
               <div class="col-6 item-featured col-md-3 reponsive-image">
                 <a href="detail.html">
@@ -833,6 +872,9 @@
             tabindex="0"
           >
             <div class="row">
+              <h2 class="title-list">Sữa Tươi Nhập Khẩu</h2>
+            </div>
+            <div class="row">
               <div class="col-6 item-featured col-md-3 reponsive-image">
                 <a href="detail.html">
                   <div class="card">
@@ -910,6 +952,9 @@
             aria-labelledby="v-pills-ready-made-powdered-tab"
             tabindex="0"
           >
+            <div class="row">
+              <h2 class="title-list">Sữa Bột Pha Sẵn</h2>
+            </div>
             <div class="row">
               <div class="col-6 item-featured col-md-3 reponsive-image">
                 <a href="detail.html">

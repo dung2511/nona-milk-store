@@ -59,9 +59,6 @@
                 Danh sách sản phẩm
               </a>
               <ul class="dropdown-menu">
-                <!-- <li>
-                  <a class="dropdown-item" href="product-list.html">Khuyến Mãi - Quà Tặng</a>
-                </li> -->
                 <li>
                   <a class="dropdown-item" href="product-list.html"
                     >Sữa Tăng Cân Cho Bé</a
@@ -103,20 +100,31 @@
             </li>
           </ul>
           <form class="d-flex header-icon" role="search">
-            <button class="btn btn-outline-success btn-search" type="submit">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
+            <div class="example" action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search2" />
+              <a href="search.html" class="btn btn-search position-absolute">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </div>
             <a href="gio-hang.html">
-              <button
-                class="btn btn-outline-success btn-shopping"
+              <div
+                class="btn btn-outline-success btn-shopping position-relative"
                 type="submit"
               >
                 <i class="fa-solid fa-cart-shopping"></i>
+                <span
+                  id="badge"
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  1
+                </span>
+              </div>
+            </a>
+            <a href="login.html">
+              <button class="btn btn-outline-success btn-user" type="button">
+                <i class="fa-solid fa-user"></i>
               </button>
             </a>
-            <button class="btn btn-outline-success btn-user" type="submit">
-              <i class="fa-solid fa-user"></i>
-            </button>
           </form>
         </div>
       </div>
@@ -127,7 +135,9 @@
         <div class="row">
           <div class="col-md-6 col-12 thong-tin">
             <div class="row">
-              <div class="col-12 d-flex justify-content-between align-items-center information-user">
+              <div
+                class="col-12 d-flex justify-content-between align-items-center information-user"
+              >
                 <label for="username">Họ và tên <mark>*</mark></label>
                 <input
                   type="text"
@@ -138,7 +148,9 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-12 d-flex justify-content-between align-items-center information-user">
+              <div
+                class="col-12 d-flex justify-content-between align-items-center information-user"
+              >
                 <label for="numberphone">Số điện thoại <mark>*</mark></label>
                 <input
                   type="tel"
@@ -149,7 +161,9 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-12 d-flex justify-content-between align-items-center information-user">
+              <div
+                class="col-12 d-flex justify-content-between align-items-center information-user"
+              >
                 <label for="tinhTP">Tỉnh/Thành phố <mark>*</mark></label>
                 <select name="tinhTP" id="tinhTP">
                   <option value="" selected disabled hidden>
@@ -159,7 +173,9 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-12 d-flex justify-content-between align-items-center information-user">
+              <div
+                class="col-12 d-flex justify-content-between align-items-center information-user"
+              >
                 <label for="quanhuyen">Chọn Quận/Huyện <mark>*</mark></label>
                 <select name="quanhuyen" id="quanhuyen">
                   <option value="" disabled hidden selected>
@@ -169,7 +185,9 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-12 d-flex justify-content-between align-items-center information-user">
+              <div
+                class="col-12 d-flex justify-content-between align-items-center information-user"
+              >
                 <label for="xaphuong">Xã/Phường <mark>*</mark></label>
                 <select name="xaphuong" id="xaphuong">
                   <option value="" disabled hidden selected>Chọn Xã</option>
@@ -177,13 +195,21 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-12 d-flex align-items-center justify-content-between information-user">
+              <div
+                class="col-12 d-flex align-items-center justify-content-between information-user"
+              >
                 <label for="dia-chi">Địa chỉ <mark>*</mark></label>
-                <input type="text" id="diachi" placeholder="Ví dụ: Số 20, Ngõ 90..." />
+                <input
+                  type="text"
+                  id="diachi"
+                  placeholder="Ví dụ: Số 20, Ngõ 90..."
+                />
               </div>
             </div>
             <div class="row">
-              <div class="col-12 d-flex align-items-center justify-content-between information-user">
+              <div
+                class="col-12 d-flex align-items-center justify-content-between information-user"
+              >
                 <label for="email">Địa chỉ Email *</label>
                 <input
                   type="email"
@@ -244,8 +270,7 @@
             </div>
           </div>
           <div class="btns-submit">
-            <button type="button" class="btn btn-danger">Đặt Hàng</button>
-            
+            <a href="ket-qua-thanh-toan.html" type="button" class="btn btn-danger">Đặt Hàng</a>
           </div>
         </div>
       </div>

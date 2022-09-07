@@ -7,6 +7,23 @@ img {
   display: block;
   object-fit: cover;
 }
+.example {
+  position: relative;
+  height: auto;
+  margin-right: 10px;
+}
+.example input {
+  height: 100%;
+  border-radius: 5px;
+}
+.btn-search {
+  display: flex;
+  align-items: center;
+  top: 30%;
+  right: 0;
+  border: 0;
+  padding: 0;
+}
 a {
   text-decoration: none;
 }
@@ -596,5 +613,8 @@ table .col-10 {
   }
   .chi-tiet-san-san-pham {
     padding: 1px 0;
+  }
+  .btn-search {
+    top: 35%;
   }
 }

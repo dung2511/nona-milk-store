@@ -98,7 +98,7 @@ td {
   padding: 0 12px;
 }
 @media only screen and (max-width: 768px){
-  .bang-chi-tiet, .tien-hanh-thanh-toan {
+  .bang-chi-tiet, .tien-hanh-thanh-toan, .flow {
     padding: 0;
   }
   .gio-hang {

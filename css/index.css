@@ -165,6 +165,25 @@ color:#1872b2;
   font-size: 3vw;
   padding-right: 1vw;
 }
+.example {
+  position: relative;
+  height: auto;
+  margin-right: 10px;
+}
+.example input {
+  height: 100%;
+  border: solid #198754;
+  border-radius: 5px;
+}
+.btn-search {
+  display: flex;
+  align-items: center;
+  top: 30%;
+  right: 0;
+  border: 0;
+  padding: 0;
+  font-weight: 200;
+}
 @media only screen and (max-width: 768px) {
   .navbar-nav {
     padding: 0;
@@ -172,6 +191,9 @@ color:#1872b2;
   .btn-outline-success {
     width: 56px;
     height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .container-fluid,
   .banner-product {
@@ -245,5 +267,8 @@ color:#1872b2;
   .connect-we li{
     font-size: 4vw;
     padding-right: 1vw;
+  }
+  .btn-search {
+    top: 35%;
   }
 }
