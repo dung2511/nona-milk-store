@@ -1,0 +1,35 @@
+.flow {
+  padding: 0 144px;
+  margin: 50px 0;
+}
+.fa-angle-right {
+  padding: 0 12px;
+}
+.main {
+    padding: 0 144px;
+}
+.title-1 {
+    margin-bottom: 20px;
+    color: #7e92a2;
+}
+.title-2, .title-3, .title-4, .title-5, .title-6 {
+    color:#7e92a2;
+    margin-top: 20px;
+}
+.title-3 {
+    background: #30a2f4;
+    padding: 8px 8px;
+    font-size: 1.5vw;
+    color: #fff;
+}
+.title-4 {
+    background: #70a56d;
+    padding: 8px 8px;
+    font-size: 1.5vw;
+    color: #fff;
+}
+@media only screen and (max-width: 768px){
+    .flow, .main {
+        padding: 0;
+    }
+}

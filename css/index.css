@@ -71,6 +71,14 @@ a {
 button .btn-add-product {
   width: 100%;
 }
+.card {
+  height: 100%;
+}
+.card-body {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .card img {
   width: 100%;
   height: auto;
