@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+/* .box-commit-items {
+  margin: 0;
+} */
 .detail {
   padding: 0 144px;
 }

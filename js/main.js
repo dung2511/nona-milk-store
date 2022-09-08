@@ -150,3 +150,18 @@ listImg.forEach((imgElement, index) =>{
   })
 })
 updateImageIndex(0);
+
+
+function contact(){
+  let fname = document.getElementById('fname').value;
+  let femail = document.getElementById('femail').value;
+  let fcontent = document.getElementById('fcontent').value;
+  if (fname == '' && femail =='' && fcontent ==''){
+    document.getElementById('thong-bao').style.display='block';
+  } else {
+    document.getElementById('thong-bao').innerHTML='Đã gửi yêu cầu thành công';
+    document.getElementById('thong-bao').style.display='block';
+    document.getElementById('thong-bao').style.color='green';
+  }
+}
+

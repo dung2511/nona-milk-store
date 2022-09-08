@@ -11,6 +11,11 @@
 .contact {
     padding: 0 144px;
 }
+#thong-bao {
+  text-align: center;
+  color:#ff4800;
+  display: none;
+}
 #form1 {
   width: 100%;  
   background: #fff;
