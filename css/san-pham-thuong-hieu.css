@@ -1,0 +1,21 @@
+.btn-outline-primary {
+    font-size: 0.8vw;
+}
+.featuredProducts {
+    margin-top: 50px;
+}
+.flow {
+    margin-bottom: 0;
+}
+.text-title {
+    padding-bottom: 8px;
+}
+@media only screen and (max-width:768px) {
+    .btn-outline-primary {
+        font-size: 3vw;
+    }
+    .flow {
+        padding: 0;
+    }
+    
+}

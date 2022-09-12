@@ -46,9 +46,13 @@ function addProduct() {
   let sum = numproduct + count;
   // console.log(sum);
   document.getElementById("soluong").value = sum;
-  document.getElementById("total").innerHTML = sum * Number(dongia) + "đ";
+  document.getElementById("total").innerHTML = (
+    sum * Number(dongia)
+  ).toLocaleString("vi", { style: "currency", currency: "VND" });
   document.getElementById("soluong-detail").innerHTML = sum;
-  document.getElementById("price-last").innerHTML = sum * Number(dongia) + "đ";
+  document.getElementById("price-last").innerHTML = (
+    sum * Number(dongia)
+  ).toLocaleString("vi", { style: "currency", currency: "VND" });
 }
 function addRes() {
   let giasanpham = document
@@ -60,8 +64,10 @@ function addRes() {
   let count = 1;
   document.getElementById("soluongresponsive").value = number + count;
   document.getElementById("soluong-detail").innerHTML = number + count;
-  document.getElementById("price-last").innerHTML =
-    (number + count) * Number(giasanpham) + "đ";
+  document.getElementById("price-last").innerHTML = (
+    (number + count) *
+    Number(giasanpham)
+  ).toLocaleString("vi", { style: "currency", currency: "VND" });
 }
 function reduceRes() {
   let giasanpham = document
@@ -75,12 +81,14 @@ function reduceRes() {
     let sum = number - count;
     document.getElementById("soluongresponsive").value = sum;
     document.getElementById("soluong-detail").innerHTML = sum;
-    document.getElementById("price-last").innerHTML =
-      sum * Number(giasanpham) + "đ";
+    document.getElementById("price-last").innerHTML = (
+      sum * Number(giasanpham)
+    ).toLocaleString("vi", { style: "currency", currency: "VND" });
   } else {
     return;
   }
 }
+
 function reduceProduct() {
   let dongia = document
     .getElementById("dongia")
@@ -93,10 +101,13 @@ function reduceProduct() {
     let sum = numproduct - count;
     // console.log(sum);
     document.getElementById("soluong").value = sum;
-    document.getElementById("total").innerHTML = sum * Number(dongia) + "đ";
+    document.getElementById("total").innerHTML = (
+      sum * Number(dongia)
+    ).toLocaleString("vi", { style: "currency", currency: "VND" });
     document.getElementById("soluong-detail").innerHTML = sum;
-    document.getElementById("price-last").innerHTML =
-      sum * Number(dongia) + "đ";
+    document.getElementById("price-last").innerHTML = (
+      sum * Number(dongia)
+    ).toLocaleString("vi", { style: "currency", currency: "VND" });
   } else {
     return;
   }
@@ -131,37 +142,47 @@ function login() {
   }
 }
 
-
-
-var imgFeature = document.querySelector('.img-feature');
-var listImg = document.querySelectorAll('.list-image img');
+var imgFeature = document.querySelector(".img-feature");
+var listImg = document.querySelectorAll(".list-image img");
 var currentIndex = 0;
-function updateImageIndex(index){
-  document.querySelectorAll('.list-image div').forEach(item=>{
-    item.classList.remove('active')
-  })
+function updateImageIndex(index) {
+  document.querySelectorAll(".list-image div").forEach((item) => {
+    item.classList.remove("active");
+  });
   currentIndex = index;
-  imgFeature.src = listImg[index].getAttribute('src');
-  listImg[index].parentElement.classList.add('active');
-} 
-listImg.forEach((imgElement, index) =>{
-  imgElement.addEventListener('click',e =>{
-    updateImageIndex(index)
-  })
-})
+  imgFeature.src = listImg[index].getAttribute("src");
+  listImg[index].parentElement.classList.add("active");
+}
+listImg.forEach((imgElement, index) => {
+  imgElement.addEventListener("click", (e) => {
+    updateImageIndex(index);
+  });
+});
 updateImageIndex(0);
 
-
-function contact(){
-  let fname = document.getElementById('fname').value;
-  let femail = document.getElementById('femail').value;
-  let fcontent = document.getElementById('fcontent').value;
-  if (fname == '' && femail =='' && fcontent ==''){
-    document.getElementById('thong-bao').style.display='block';
+function contact() {
+  let fname = document.getElementById("fname").value;
+  let femail = document.getElementById("femail").value;
+  let fcontent = document.getElementById("fcontent").value;
+  if (fname == "" && femail == "" && fcontent == "") {
+    document.getElementById("thong-bao").style.display = "block";
   } else {
-    document.getElementById('thong-bao').innerHTML='Đã gửi yêu cầu thành công';
-    document.getElementById('thong-bao').style.display='block';
-    document.getElementById('thong-bao').style.color='green';
+    document.getElementById("thong-bao").innerHTML =
+      "Đã gửi yêu cầu thành công";
+    document.getElementById("thong-bao").style.display = "block";
+    document.getElementById("thong-bao").style.color = "green";
   }
 }
-
+function submit(){
+  let dienthongtin = document.getElementById('dienthongtin').value;
+  let hoten = document.getElementById('ho-ten').value;
+  if (dienthongtin==''&& hoten== ''){
+    document.getElementById('check-dien-thong-tin').innerHTML = 'Vui lòng điền đầy đủ thông tin';
+    document.getElementById('check-dien-thong-tin').style.color='#d91545';
+    document.getElementById('check-dien-thong-tin').style.textAlign='center';
+  } else {
+    document.getElementById('check-dien-thong-tin').innerHTML = 'Đã gửi thành công';
+    document.getElementById('check-dien-thong-tin').style.color='#4fb3a2';
+    document.getElementById('check-dien-thong-tin').style.textAlign='center';
+  }
+}

@@ -186,6 +186,13 @@ li {
 .box-commit-items {
   margin: 0;
 }
+.flow {
+  padding: 0 144px;
+    margin: 50px 0;
+}
+.fa-angle-right {
+  padding: 0 12px;
+}
 @media only screen and (max-width: 768px) {
   .navbar-nav {
     padding: 0;

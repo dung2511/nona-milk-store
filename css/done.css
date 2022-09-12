@@ -13,10 +13,15 @@
     padding-top: 12px;
     color: #57df00;
 }
-.back-home {
+.back-home, .continue-buy {
     text-align: center;
     font-size: 1.5vw;
     padding-top: 12px;
+}
+.continue-buy a{
+    background: #99cee9;
+    color: #13110c;
+    font-size: 1.3vw;
 }
 @media only screen and (max-width: 768px) {
     .done {

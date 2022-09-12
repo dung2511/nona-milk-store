@@ -439,11 +439,11 @@
           <p class="title-danh-gia">Đánh giá</p>
         </div>
       </div>
-      <div class="row">
+      <div class="row d-flex justify-content-between">
         <div class="col-12 col-md-6">
           <div class="row">
             <div class="col-12">
-              <p class="cham-diem">5.0</p>
+              <p class="cham-diem">4.0</p>
             </div>
           </div>
           <div class="row 5star d-flex align-items-center">
@@ -457,7 +457,7 @@
             <div class="col-8 thanh-danh-gia">
               <div class="task-rating"></div>
             </div>
-            <p class="col-1 so-danh-gia">436</p>
+            <p class="col-1 so-danh-gia">95</p>
           </div>
           <div class="row 5star d-flex align-items-center">
             <div class="star-danh-gia col-3">
@@ -469,7 +469,7 @@
             <div class="thanh-danh-gia col-8">
               <div class="task-rating-4star"></div>
             </div>
-            <p class="so-danh-gia col-1">1</p>
+            <p class="so-danh-gia col-1">10</p>
           </div>
           <div class="row 5star d-flex align-items-center">
             <div class="star-danh-gia col-3">
@@ -530,9 +530,122 @@
             </div>
           </div>
         </div>
+        <div class="col-md-6 col-12 user-comment">
+          <div class="row">
+            <div class="col-12 d-flex align-items-center">
+              <div class="name-user">Tuyết Mơ Lê</div>
+              <div class="ngay-danh-gia">23-8-2022</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="so-sao-danh-gia">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="nhan-xet">
+                <p>Sản phẩm chất lượng</p>
+                <p>Đóng gói tốt</p>
+                <p>Nhân viên giao hàng thân thiện</p>
+                <p>Dịch vụ tốt</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-12 user-comment">
+          <div class="row">
+            <div class="col-12 d-flex align-items-center">
+              <div class="name-user">Tuyết Mơ Lê</div>
+              <div class="ngay-danh-gia">23-8-2022</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="so-sao-danh-gia">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="nhan-xet">
+                <p>Sản phẩm chất lượng</p>
+                <p>Đóng gói tốt</p>
+                <p>Nhân viên giao hàng thân thiện</p>
+                <p>Dịch vụ tốt</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="hoi-dap" class="row">
-        <div class="col-12">Hỏi đáp</div>
+        <div class="col-12 title-hoi-dap">Hỏi đáp</div>
+      </div>
+      <div class="thongtin">
+        <input type="text" name="" id="dienthongtin" placeholder="Mời bạn tham gia thảo luận, Vui lòng nhập Tiếng Việt có dấu.">
+        <div class="check">
+          <input type="radio" name="gioitinh" id="">
+          <label for="gioitinh">Anh</label>
+          <input type="radio" name="gioitinh" id="">
+          <label for="gioitinh">Chị</label>
+          <input type="text" name="" id="ho-ten" placeholder="Họ tên(bắt buộc)">
+          <input type="email" name="" id="" placeholder="Email">
+          <button type="submit" onclick="submit()" class="btn btn-info">Gửi</button>
+        </div>
+        <p id="check-dien-thong-tin"></p>
+      </div>
+      <div class="comment row d-flex justify-content-between">
+        <div class="col-md-6 col-12 user-comment">
+          <div class="row">
+            <div class="col-12 d-flex align-items-center">
+              <div class="name-user">Ba Mẹ</div>
+              <div class="ngay-danh-gia">26-7-2022</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="comment-user">
+                <p>Bé đang uống meiji nội địa giờ em đổi nhập khẩu có khác khẩu vị lắm ko ạ?</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="rep-comment">
+                <p>Chào Chị, sản phẩm Sữa Meiji Infant Formula 800g (0-12 tháng) có vị nhạt, Chị có thể đổi sang từ từ để hệ tiêu hóa của bé thích ứng với dòng sữa mới ạ. Con Cưng xin cảm ơn.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-12 user-comment">
+          <div class="row">
+            <div class="col-12 d-flex align-items-center">
+              <div class="name-user">Ba Mẹ</div>
+              <div class="ngay-danh-gia">29-10-2022</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="comment-user">
+                <p>Bé đang uống meiji nội địa giờ em đổi nhập khẩu có khác khẩu vị lắm ko ạ?</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="rep-comment">
+                <p>Chào Chị, sản phẩm Sữa Meiji Infant Formula 800g (0-12 tháng) có vị nhạt, Chị có thể đổi sang từ từ để hệ tiêu hóa của bé thích ứng với dòng sữa mới ạ. Con Cưng xin cảm ơn.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="box-commit">
@@ -610,41 +723,17 @@
     </section>
     <section class="footer">
       <div class="row">
-        <div class="col-md-3 col-6 footer-list">
-          <h5 class="footer-title">
-            <p>Chăm sóc khách hàng</p>
-          </h5>
-          <ul class="menu-footer-title">
-            <li><a href="#">Hướng Dẫn Mua Hàng</a></li>
-            <li><a href="">Chính Sách Bảo Hành</a></li>
-            <li><a href="">Thanh Toán</a></li>
-            <li><a href="">Trả Hàng & Hoàn Tiền</a></li>
-            <li><a href="">Hướng Dẫn Bán Hàng</a></li>
-            <li><a href="">Trung tâm trợ giúp</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-6 footer-list">
-          <h5 class="footer-title">
-            <p>Về công ty NoNa</p>
-          </h5>
-          <ul class="menu-footer-title">
-            <li><a href="#">Giới thiệu về Công ty NoNa</a></li>
-            <li><a href="">Tuyển dụng khối Văn phòng</a></li>
-            <li><a href="">Tuyển dụng Khối siêu thị</a></li>
-            <li><a href="">Chính sách bảo mật</a></li>
-            <li><a href="">Điều khoản sử dụng</a></li>
-          </ul>
-        </div>
+        
         <div class="col-md-3 col-6 footer-list">
           <h5 class="footer-title">
             <p>Công ty cổ phần NoNa</p>
           </h5>
           <ul class="menu-footer-title">
-            <li><a href="#">Email: cskh@nona.com</a></li>
-            <li><a href="">Điện thoại: 023 xxxx 3374</a></li>
-            <li><a href="">ĐKKD: TN-TT-HN</a></li>
+            <li><p>Email: cskh@nona.com</p></li>
+            <li><p>Điện thoại: 023 xxxx 3374</p></li>
+            <li><p>ĐKKD: TN-TT-HN</p></li>
             <li>
-              <a href="">Văn phòng: Tầng X Tòa nhà X, 0Z T, P. A, Q. D, HN</a>
+              <p>Văn phòng: Tầng 24 Tòa nhà X, 0Z T, P. A, Quận THanh Xuân, Thành Phố Hà Nội</p>
             </li>
           </ul>
         </div>
