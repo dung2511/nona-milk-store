@@ -10,6 +10,9 @@ select,
 input {
   width: 20vw;
 }
+.example input {
+  width: auto;
+}
 .dien-thong-tin form > .row > .col-md-6 {
   display: flex;
   flex-direction: column;
@@ -28,8 +31,8 @@ select {
 }
 td,
 th {
-  width: 50%;
-  padding: 8px;
+  width: 47%;
+  padding: 6px;
 }
 .hinh-thuc-thanh-toan {
   padding: 0 144px;
