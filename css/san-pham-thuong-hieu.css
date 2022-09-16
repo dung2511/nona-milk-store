@@ -10,6 +10,22 @@
 .text-title {
     padding-bottom: 8px;
 }
+.thongtin-thuonghieu {
+    padding: 0 144px;
+    margin-top: 50px;
+}
+.thongtin-thuonghieu img {
+    border-radius: 8px;
+    box-shadow: 0 6px 12px 0 rgb(0 0 0 / 10%);
+    border: #eee solid 1px;
+}
+.title {
+    color: #3567d7!important;
+}
+.viewmore {
+    width: 100%;
+    text-align: left;
+}
 @media only screen and (max-width:768px) {
     .btn-outline-primary {
         font-size: 3vw;

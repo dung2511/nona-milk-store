@@ -4,9 +4,9 @@ html {
 .ttbi a {
   color: #000;
 }
-/* .box-commit-items {
+.box-commit-items {
   margin: 0;
-} */
+}
 .detail {
   padding: 0 144px;
 }
@@ -360,5 +360,14 @@ h5 {
   .nav-pills .nav-link {
     border-radius: 8px;
     padding: 8px;
+  }
+  .user-comment {
+    width: calc(50% - 2px) !important;
+  }
+  .check {
+    flex-wrap: wrap;
+  }
+  .check input, .check label  {
+    margin-bottom: 8px;
   }
 }
