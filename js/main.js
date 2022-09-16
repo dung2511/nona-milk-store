@@ -186,3 +186,4 @@ function submit(){
     document.getElementById('check-dien-thong-tin').style.textAlign='center';
   }
 }
+

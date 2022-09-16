@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+.ttbi a {
+  color: #000;
+}
 /* .box-commit-items {
   margin: 0;
 } */

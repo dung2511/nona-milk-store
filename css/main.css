@@ -336,6 +336,21 @@ li {
 .item-featured {
   margin-bottom: 1rem;
 }
+#myBtn {
+  position: fixed;
+  bottom: 50px;
+  right: 15px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #ee697a;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
 @media only screen and (max-width: 768px) {
   body {
     padding: 0 15px;
