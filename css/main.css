@@ -240,6 +240,7 @@ li {
   }
   .btn-outline-primary {
     font-size: 3vw;
+    padding: 6px;
   }
   .text-title p {
     font-size: 5vw;
