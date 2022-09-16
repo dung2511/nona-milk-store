@@ -192,6 +192,12 @@ color:#1872b2;
   padding: 0;
   font-weight: 200;
 }
+.trademark-item {
+  transition:.3s;
+}
+.list-trademark .trademark-item:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
 @media only screen and (max-width: 768px) {
   .navbar-nav {
     padding: 0;
