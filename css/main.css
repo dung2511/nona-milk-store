@@ -297,9 +297,9 @@ li {
   padding: 20px 144px;
   background-color: #f8f9fa !important;
 }
-.box-commit-items {
+/* .box-commit-items {
   margin-bottom: 32px;
-}
+} */
 .box-commit i {
   color: #20a1f4;
   font-size: 3em;
