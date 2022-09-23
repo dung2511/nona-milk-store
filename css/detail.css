@@ -217,15 +217,14 @@ table .col-10 {
 .title-danh-gia, .title-hoi-dap {
   margin-top: 50px;
   margin-bottom: 5px;
-  color: #ee697a;
   font-size: 2.5vw;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 700;
 }
 .cham-diem {
-  color: #ee697a;
   font-size: 4vw;
   text-align: center;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 700;
+
 }
 .user-comment {
   background-color: #fff1eb;
