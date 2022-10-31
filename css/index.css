@@ -54,6 +54,7 @@ a {
 .trademark-text {
   text-align: center;
   font-size: 2vw;
+  color: #297094;
 }
 .featuredProducts {
   padding: 0 144px;
@@ -86,6 +87,8 @@ button .btn-add-product {
 .text-title p {
   font-size: 2vw;
   font-weight: 500 !important;
+  text-align: center;
+  color: #297094;
 }
 .item-featured h5 {
   transition: 0.7s;
@@ -118,6 +121,8 @@ button .btn-add-product {
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 16px;
+  text-align: center;
+  color:#297094;
 }
 .news-list img {
   width: 100%;
